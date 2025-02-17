@@ -1,0 +1,50 @@
+{
+  "Header": {
+    "logoAlt": "Najem Aleen Shipping Logo",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "Footer": {
+    "copyright": "© 2024 Najem Aleen Shipping. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "Index": {
+    "heroTitle": "Comprehensive Logistics Services in the UAE",
+    "heroDescription": "Expert container shipping, freight forwarding, and customs clearance solutions for businesses.",
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More",
+    "servicesTitle": "Our Services",
+    "servicesDescription": "At Najem Aleen Shipping, we specialize in container shipping, freight forwarding, and comprehensive customs clearance solutions.",
+    "containerShipping": {
+      "title": "Container Shipping",
+      "description": "Efficient container shipping services for businesses with large-scale logistics needs."
+    },
+    "freightForwarding": {
+      "title": "Freight Forwarding",
+      "description": "Expert consolidation services for import/export, ensuring efficient handling of your cargo."
+    },
+    "customsClearance": {
+      "title": "Customs Clearance",
+      "description": "Comprehensive customs clearance solutions to streamline your shipping process."
+    },
+    "carTransportation": {
+      "title": "Car Transportation",
+      "description": "Worldwide car transport services with all necessary paperwork handled for you."
+    },
+    "contactTitle": "Contact Us",
+    "contactDescription": "Get in touch for efficient logistics solutions",
+    "callNow": "Click to Call Now",
+    "callAvailability": "Available 24/7",
+    "whatsAppNow": "Contact via WhatsApp",
+    "whatsAppAvailability": "Quick Response",
+    "mapsNow": "Find us on Google Maps",
+    "mapsAvailability": "Get Directions",
+    "emailUs": "Email Us",
+    "emailNow": "Email Us",
+    "emailAddress": "sales@najemaleen.com"
+  }
+}
+

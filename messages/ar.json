@@ -1,0 +1,52 @@
+{
+  "LanguageSwitcher": {
+    "switchTo": "English"
+  },
+  "Header": {
+    "logoAlt": "شعار نجم العين للشحن",
+    "services": "الخدمات",
+    "about": "عن الشركة",
+    "contact": "اتصل بنا",
+    "getQuote": "احصل على عرض سعر"
+  },
+  "Footer": {
+    "copyright": "© 2024 نجم العين للشحن. جميع الحقوق محفوظة.",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة"
+  },
+  "Index": {
+    "heroTitle": "خدمات لوجستية شاملة في الإمارات العربية المتحدة",
+    "heroDescription": "حلول خبيرة في شحن الحاويات والشحن والتخليص الجمركي للشركات.",
+    "contactUs": "اتصل بنا",
+    "learnMore": "اعرف المزيد",
+    "servicesTitle": "خدماتنا",
+    "servicesDescription": "في نجم العين للشحن، نتخصص في شحن الحاويات والشحن والتخليص الجمركي الشامل.",
+    "containerShipping": {
+      "title": "شحن الحاويات",
+      "description": "خدمات شحن الحاويات الفعالة للشركات ذات الاحتياجات اللوجستية واسعة النطاق."
+    },
+    "freightForwarding": {
+      "title": "الشحن",
+      "description": "خدمات تجميع خبيرة للاستيراد/التصدير، تضمن التعامل الفعال مع شحنتك."
+    },
+    "customsClearance": {
+      "title": "التخليص الجمركي",
+      "description": "حلول تخليص جمركي شاملة لتبسيط عملية الشحن الخاصة بك."
+    },
+    "carTransportation": {
+      "title": "نقل السيارات",
+      "description": "خدمات نقل السيارات في جميع أنحاء العالم مع التعامل مع جميع الأوراق اللازمة لك."
+    },
+    "contactTitle": "اتصل بنا",
+    "contactDescription": "تواصل معنا للحصول على حلول لوجستية فعالة",
+    "callNow": "انقر للاتصال الآن",
+    "callAvailability": "متاح على مدار الساعة",
+    "whatsAppNow": "تواصل عبر واتساب",
+    "whatsAppAvailability": "استجابة سريعة",
+    "mapsNow": "جدنا على خرائط جوجل",
+    "mapsAvailability": "احصل على الاتجاهات",
+    "emailNow": "راسلنا عبر البريد الإلكتروني",
+    "emailAddress": "sales@najemaleen.com"
+  }
+}
+
