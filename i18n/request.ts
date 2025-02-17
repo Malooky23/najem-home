@@ -12,6 +12,6 @@ export default getRequestConfig(async ({requestLocale}) => {
  
   return {
     locale,
-    messages: (await import(`/Users/malek/local_projects/najem_home/najem-home/messages/${locale}.json`)).default
+    messages: (await import(`.././messages/${locale}.json`)).default
   };
 });
