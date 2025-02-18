@@ -31,7 +31,7 @@ export default function ServicesSection() {
                 </div>
 
                 <h3 className="text-xl font-bold text-primary">{t(`${service.key}.title`)}</h3>
-                <p className="text-sm text-muted-foreground text-left">{t(`${service.key}.description`)}</p>
+                <p className="text-sm text-muted-foreground ">{t(`${service.key}.description`)}</p>
               </div>
             </CardContent>
           </Card>

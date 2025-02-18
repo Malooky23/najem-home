@@ -1,0 +1,14 @@
+#contact .contact-icon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  #contact .lucide-icon {
+    stroke-width: 1px !important;
+  }
+  
+  #contact .custom-whatsapp-icon {
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 0.5px;
+  }

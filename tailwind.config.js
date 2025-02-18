@@ -5,6 +5,7 @@ module.exports = {
   darkMode: ["class"],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    
     container: {
       center: true,
       padding: "2rem",
@@ -61,6 +62,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        cairo: ['Cairo', 'arabic'],
+
       },
     },
   },

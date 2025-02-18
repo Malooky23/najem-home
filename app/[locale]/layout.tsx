@@ -32,13 +32,26 @@ export default async function LocaleLayout({
   }
   let whichFont = cairo
   if(locale === "ar"){
-    const whichFont = cairo
+     whichFont = cairo
+
+     return (
+      <html lang='ar' dir='rtl' className='font-cairo'>
+        <body className={whichFont.className}>
+          <NextIntlClientProvider locale='ar' messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </body>
+      </html>
+    )
+
   }else if(locale === 'en'){
-    const whichFont = inter
+     whichFont = inter
   }else{
-    const whichFont = inter
+     whichFont = inter
 
   }
+
+
 
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
