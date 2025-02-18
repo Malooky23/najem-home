@@ -27,7 +27,6 @@ export default async function LocaleLayout({
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {locale}
           {children}
         </NextIntlClientProvider>
       </body>
