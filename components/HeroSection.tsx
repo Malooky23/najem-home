@@ -105,6 +105,7 @@ import { useLocale, useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 import { Ship } from "@/components/ship"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function HeroSection() {
   const t = useTranslations("Index")
@@ -145,14 +146,14 @@ export default function HeroSection() {
           <div className="absolute -top-[50px] w-full md:hidden">
             <div
               className={`absolute -top-50 h-[180px] w-[180px] rounded-full bg-secondary/10 ${isRtl
-                  ? "left-[30%] -translate-x-1/2 translate-y-4"
-                  : "right-[30%] translate-x-1/2 translate-y-4"
+                ? "left-[30%] -translate-x-1/2 translate-y-4"
+                : "right-[30%] translate-x-1/2 translate-y-4"
                 }`}
             />
             <div
               className={`absolute top-16 h-[180px] w-[180px] rounded-full bg-primary/10 ${isRtl
-                  ? "right-[30%] translate-x-1/2 -translate-y-4"
-                  : "left-[30%] -translate-x-1/2 -translate-y-4"
+                ? "right-[30%] translate-x-1/2 -translate-y-4"
+                : "left-[30%] -translate-x-1/2 -translate-y-4"
                 }`}
             />
           </div>
@@ -175,20 +176,27 @@ export default function HeroSection() {
               <p className="max-w-[600px] text-muted-foreground md:text-xl">{t("heroDescription")}</p>
             </div>
             <div className="flex flex-col gap-3 min-[400px]:flex-row">
-              <Button
-                size="lg"
-                className="group relative overflow-hidden bg-primary px-8 py-6 transition-all hover:bg-primary/90"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-secondary opacity-0 transition-opacity group-hover:opacity-100" />
-                <span className="relative">{t("contactUs")}</span>
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-secondary px-8 py-6 text-secondary hover:bg-secondary/10 hover:text-secondary"
-              >
-                {t("learnMore")}
-              </Button>
+              <Link href={'tel:+971549968487'}>
+
+                <Button
+                  size="lg"
+                  className="group relative overflow-hidden bg-primary px-8 py-6 transition-all hover:bg-primary/90"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-secondary opacity-0 transition-opacity group-hover:opacity-100" />
+                  <span className="relative">{t("contactUs")}</span>
+                </Button>
+              </Link>
+
+              <Link href={'https://wa.me/971549968485'}>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-secondary px-8 py-6 text-secondary hover:bg-secondary/10 hover:text-secondary"
+
+                >
+                  {t("learnMore")}
+                </Button>
+              </Link>
             </div>
           </div>
 
