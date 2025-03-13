@@ -41,7 +41,12 @@ export default function Header() {
               <span className="relative z-10">{t("getQuote")}</span>
               <span className="absolute inset-0 bg-secondary/20 rounded-md opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></span>
             </Button>
-
+          </Link>
+          <Link href='https://app.malekdarwish.com/login'>
+            <Button className="bg-primary relative overflow-hidden transition-colors duration-300 ease-in-out hover:bg-primary/50 group">
+              <span className="relative z-10">{t("login")}</span>
+              <span className="absolute inset-0 bg-secondary/20 rounded-md opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></span>
+            </Button>
           </Link>
         </div>
       </div>

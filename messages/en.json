@@ -4,7 +4,8 @@
     "services": "Services",
     "about": "About",
     "contact": "Contact",
-    "getQuote": "Get a Quote"
+    "getQuote": "Get a Quote",
+    "login": "Login"
   },
   "Footer": {
     "copyright": "© 2025 Najem Aleen Shipping. All rights reserved.",
