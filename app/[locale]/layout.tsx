@@ -4,7 +4,7 @@ import { notFound } from "next/navigation"
 import { Inter, Cairo } from "next/font/google"
 import { getMessages } from "next-intl/server"
 import {routing} from '@/i18n/routing';
-
+import StructuredData from "@/components/StructuredData";
 
 const inter = Inter({ subsets: ["latin"] })
 const cairo = Cairo({ subsets: ["arabic"] })
@@ -36,6 +36,9 @@ export default async function LocaleLayout({
 
      return (
       <html lang='ar' dir='rtl' className='font-cairo'>
+        <head>
+          <StructuredData />
+        </head>
         <body className={whichFont.className}>
           <NextIntlClientProvider locale='ar' messages={messages}>
             {children}
@@ -48,13 +51,13 @@ export default async function LocaleLayout({
      whichFont = inter
   }else{
      whichFont = inter
-
   }
-
-
 
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+      <head>
+        <StructuredData />
+      </head>
       <body className={whichFont.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

@@ -56,7 +56,7 @@ export default function ContactSection() {
       textColor: "text-blue-500",
       iconHoverColor: "group-hover:text-blue-600",
       shadowHover: "group-hover:shadow-md group-hover:shadow-blue-500/20",
-      link: 'https://najemaleen.com/maps'
+      link: 'https://maps.app.goo.gl/e65KNCL1kUMD9NzU7'
     },
     {
       icon: Mail,
