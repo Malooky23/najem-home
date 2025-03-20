@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { PostHogProvider } from "./providers";
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,8 @@ export default function RootLayout({
       >
         <PostHogProvider>
           {children}
+          <Analytics />
+
         </PostHogProvider>
       </body>
     </html>
