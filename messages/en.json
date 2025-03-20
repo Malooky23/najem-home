@@ -59,16 +59,16 @@
     "title": "Frequently Asked Questions",
     "questions": {
       "shipping_process": {
-        "question": "What is the step-by-step process for importing commercial goods into Dubai through your logistics services?",
-        "answer": "Our process for importing commercial goods into Dubai involves a clear and structured approach. Initially, we require detailed information about your shipment, including the nature of the goods, their origin, and the intended destination within Dubai or the wider UAE. Our experienced team will then guide you through the necessary documentation, such as commercial invoices, packing lists, and certificates of origin, ensuring all paperwork meets Dubai Customs regulations. We expertly handle the customs clearance procedures at major Dubai ports, including Jebel Ali and Port Rashid, and airports, ensuring compliance with all applicable tariffs and regulations. Finally, we arrange for the secure and efficient transportation of your goods to your specified location, keeping you informed with our comprehensive shipment tracking system."
+        "question": "What is the step-by-step process for importing commercial goods into Dubai and other emirates in the UAE through your logistics services?",
+        "answer": "Our process for importing commercial goods into Dubai, Abu Dhabi, Sharjah, and all other emirates in the UAE involves a clear and structured approach. Initially, we require detailed information about your shipment, including the nature of the goods, their origin, and the intended destination within the UAE (whether Dubai, Abu Dhabi, Sharjah, or other emirates). Our experienced team will then guide you through the necessary documentation, such as commercial invoices, packing lists, and certificates of origin, ensuring all paperwork meets Dubai Customs and UAE federal regulations. We expertly handle the customs clearance procedures at major ports including Jebel Ali (Dubai), Khalifa Port (Abu Dhabi), Sharjah Port, and international airports throughout the UAE, ensuring compliance with all applicable tariffs and regulations. Finally, we arrange for the secure and efficient transportation of your goods to your specified location in Dubai or any other emirate, keeping you informed with our comprehensive shipment tracking system."
       },
       "customs_clearance": {
-        "question": "What specific customs clearance procedures do you manage for businesses importing or exporting goods through Dubai ports?",
-        "answer": "Our logistics company in Dubai specializes in managing a comprehensive range of customs clearance procedures for businesses engaged in import and export activities through Dubai's key ports. For imports, our expert team meticulously handles the submission of all required documentation to Dubai Customs, ensuring accurate classification of goods and adherence to all relevant import regulations. We manage various customs processes, including duty and tax assessments, temporary admissions for exhibitions, and clearance for goods destined for Dubai's free zones. For exports, we assist with the preparation of export declarations and ensure compliance with the customs regulations of the destination country. Our goal is to expedite the clearance process, minimizing delays and potential penalties, thereby ensuring a smooth flow of your goods across borders."
+        "question": "What specific customs clearance procedures do you manage for businesses importing or exporting goods through UAE ports?",
+        "answer": "Our company specializes in managing a comprehensive range of customs clearance procedures for businesses engaged in import and export activities through major UAE ports in Dubai, Abu Dhabi, and Sharjah. For imports, our expert team meticulously handles the submission of all required documentation to UAE Customs authorities, ensuring accurate classification of goods and adherence to all relevant import regulations. We manage various customs processes, including duty and tax assessments, temporary admissions for exhibitions, and clearance for goods destined for the UAE's free zones. For exports, we assist with the preparation of export declarations and ensure compliance with the customs regulations of the destination country. Our goal is to expedite the clearance process across all emirates, minimizing delays and potential penalties, thereby ensuring a smooth flow of your goods across borders."
       },
       "shipping_quote": {
-        "question": "How can I get a shipping quote for transporting goods to or from Dubai, and what information do I need to provide?",
-        "answer": "Obtaining a personalized shipping quote for transporting goods to or from Dubai is a straightforward process. To provide you with an accurate estimate, we require specific details about your shipment. This includes the dimensions (length, width, height) and weight of the goods, the precise origin and destination addresses, and the preferred mode of transport (air freight, sea freight, or land transport). Additionally, please specify the level of service required, such as standard or expedited shipping. Any special handling requirements or the need for shipping insurance should also be communicated. Once we have this information, our team will promptly prepare a detailed and competitive quote tailored to your specific logistics needs."
+        "question": "How can I get a shipping quote for transporting goods to or from the UAE, and what information do I need to provide?",
+        "answer": "Obtaining a personalized shipping quote for transporting goods to or from any emirate in the UAE is a straightforward process. To provide you with an accurate estimate, we require specific details about your shipment. This includes the dimensions (length, width, height) and weight of the goods, the precise origin and destination addresses (including which emirate - Dubai, Abu Dhabi, Sharjah, etc.), and the preferred mode of transport (air freight, sea freight, or land transport). Additionally, please specify the level of service required, such as standard or expedited shipping. Any special handling requirements or the need for shipping insurance should also be communicated. Once we have this information, our team will promptly prepare a detailed and competitive quote tailored to your specific logistics needs."
       },
       "car_shipping": {
         "question": "What are the requirements and steps for exporting a vehicle from Dubai to or importing a car into Dubai?",
@@ -83,17 +83,17 @@
         "answer": "Yes, we provide secure and flexible warehousing and storage solutions in Dubai. Our state-of-the-art facilities offer both short-term and long-term storage options to meet your specific needs. We have various storage types available, including general warehousing for palletized goods, temperature-controlled storage for sensitive items, and secure storage for high-value cargo. Our warehouses are strategically located for easy access to major transportation routes in Dubai. Contact us to discuss your warehousing requirements and find the best solution for your business."
       },
       "shipment_tracking": {
-          "question": "How can I track my shipment? What information is needed to track a shipment? Is real-time tracking available?",
-          "answer": "Customers can track shipments via the website using a tracking number. Real-time updates are provided."
+        "question": "How can I track my shipment? What information is needed to track a shipment? Is real-time tracking available?",
+        "answer": "Customers can track shipments via the website using a tracking number. Real-time updates are provided."
       },
-        "shipping_insurance": {
-          "question": "Do you provide shipping insurance options? What types of insurance coverage are offered? How can I file an insurance claim?",
-          "answer": "Yes, offers various insurance options to protect shipments against loss or damage. Details on coverage and claim procedures are available upon request."
-        },
-        "types_of_goods": {
-            "question": "What types of goods can you ship? Are there any restrictions on the types of goods you handle (e.g., hazardous materials, perishable goods)?",
-            "answer": "Handles a wide range of goods. Restrictions apply to hazardous and prohibited items. Contact for specific inquiries about perishable goods."
-        }
+      "shipping_insurance": {
+        "question": "Do you provide shipping insurance options? What types of insurance coverage are offered? How can I file an insurance claim?",
+        "answer": "Yes, offers various insurance options to protect shipments against loss or damage. Details on coverage and claim procedures are available upon request."
+      },
+      "types_of_goods": {
+        "question": "What types of goods can you ship? Are there any restrictions on the types of goods you handle (e.g., hazardous materials, perishable goods)?",
+        "answer": "Handles a wide range of goods. Restrictions apply to hazardous and prohibited items. Contact for specific inquiries about perishable goods."
+      }
     }
   }
 }

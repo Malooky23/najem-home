@@ -14,58 +14,58 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
   const locale = useLocale();
   const isRTL = locale === 'ar';
   
-  // Dynamic max height to accommodate longer Arabic text
+  // Dynamic max height based on content length
   const [maxHeight, setMaxHeight] = useState('500px');
   
-  // Adjust max height based on content length and language
   useEffect(() => {
-    // Arabic text often needs more vertical space
-    if (isRTL && answer.length > 200) {
+    // Longer text needs more space
+    if (answer.length > 200) {
       setMaxHeight('800px');
     }
-  }, [isRTL, answer]);
+    if (answer.length > 500) {
+      setMaxHeight('1200px');
+    }
+  }, [answer]);
   
   return (
     <div className="mb-6 border border-gray-200 rounded-lg overflow-hidden">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full flex items-center justify-between p-4 bg-white hover:bg-gray-50 transition-colors"
+        className="w-full p-4 bg-white hover:bg-gray-50 transition-colors"
         aria-expanded={isExpanded}
       >
-        {/* Different order of elements for RTL vs LTR */}
-        {isRTL ? (
-          <>
-            {/* For RTL: Chevron on left */}
-            <div className="flex-shrink-0 order-first">
-              {isExpanded ? (
-                <ChevronUp className="h-5 w-5 text-primary" />
-              ) : (
-                <ChevronDown className="h-5 w-5 text-gray-500" />
-              )}
-            </div>
-            
-            {/* Question text aligned right */}
-            <h3 className="flex-grow text-right font-semibold text-lg pr-4">
-              {question}
-            </h3>
-          </>
-        ) : (
-          <>
-            {/* For LTR: Question text aligned left */}
-            <h3 className="flex-grow text-left font-semibold text-lg">
-              {question}
-            </h3>
-            
-            {/* Chevron on right */}
-            <div className="flex-shrink-0 ml-4">
-              {isExpanded ? (
-                <ChevronUp className="h-5 w-5 text-primary" />
-              ) : (
-                <ChevronDown className="h-5 w-5 text-gray-500" />
-              )}
-            </div>
-          </>
-        )}
+        <div className="flex items-center w-full">
+          {/* Force proper positioning regardless of RTL setting */}
+          {isRTL ? (
+            <>
+              {/* Arabic (RTL) - Chevron left, text right */}
+              <div className="flex-shrink-0 ml-0 mr-3">
+                {isExpanded ? (
+                  <ChevronUp className="h-5 w-5 text-primary" />
+                ) : (
+                  <ChevronDown className="h-5 w-5 text-gray-500" />
+                )}
+              </div>
+              <h3 className="flex-grow text-right font-semibold text-lg">
+                {question}
+              </h3>
+            </>
+          ) : (
+            <>
+              {/* English (LTR) - Text left, chevron right */}
+              <h3 className="flex-grow text-left font-semibold text-lg">
+                {question}
+              </h3>
+              <div className="flex-shrink-0 ml-3">
+                {isExpanded ? (
+                  <ChevronUp className="h-5 w-5 text-primary" />
+                ) : (
+                  <ChevronDown className="h-5 w-5 text-gray-500" />
+                )}
+              </div>
+            </>
+          )}
+        </div>
       </button>
       
       <div 
@@ -74,17 +74,17 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
           isExpanded 
             ? "py-4 opacity-100" 
             : "py-0 opacity-0 overflow-hidden"
-        } ${isRTL ? 'text-right' : 'text-left'}`}
+        }`}
       >
-        <p className={`text-gray-600 ${isRTL ? 'leading-relaxed' : ''}`}>
+        <p className={`text-gray-600 ${isRTL ? 'text-right text-lg leading-loose' : 'text-left'}`}>
           {answer}
         </p>
       </div>
       
-      {/* NoScript fallback for users without JavaScript */}
+      {/* NoScript fallback */}
       <noscript>
-        <div className={`px-4 py-4 border-t border-gray-200 ${isRTL ? 'text-right' : 'text-left'}`}>
-          <p className={`text-gray-600 ${isRTL ? 'leading-relaxed' : ''}`}>
+        <div className="px-4 py-4 border-t border-gray-200">
+          <p className={`text-gray-600 ${isRTL ? 'text-right text-lg leading-loose' : 'text-left'}`}>
             {answer}
           </p>
         </div>

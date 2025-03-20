@@ -18,11 +18,11 @@ export async function generateMetadata({ params }:
   
   return {
     title: isArabic 
-      ? "نجم العين للشحن | خدمات لوجستية شاملة في الإمارات"
+      ? "نجم العين للشحن | خدمات لوجستية شاملة في الإمارات العربية المتحدة"
       : "Najem Aleen Shipping | Comprehensive Logistics Services in UAE",
     description: isArabic
-      ? "حلول خبيرة في شحن الحاويات والتخليص الجمركي للشركات في الإمارات العربية المتحدة"
-      : "Expert container shipping, freight forwarding, and customs clearance solutions for businesses in the UAE",
+      ? "حلول خبيرة في شحن الحاويات والتخليص الجمركي للشركات في الإمارات العربية المتحدة بما في ذلك دبي، أبوظبي، والشارقة"
+      : "Expert container shipping, freight forwarding, and customs clearance solutions for businesses across all emirates of the UAE including Dubai, Abu Dhabi, and Sharjah",
     alternates: {
       canonical: `/${params.locale}`,
       languages: {
