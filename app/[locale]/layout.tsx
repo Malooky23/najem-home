@@ -1,56 +1,33 @@
-import type React from "react"
-import { NextIntlClientProvider, useMessages } from "next-intl"
-import { notFound } from "next/navigation"
-import { Inter, Cairo } from "next/font/google"
-import { getMessages } from "next-intl/server"
-import {routing} from '@/i18n/routing';
+import type React from "react";
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { getMessages } from 'next-intl/server';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Inter, Cairo } from "next/font/google";
+import { routing } from "@/i18n/routing";
 import StructuredData from "@/components/StructuredData";
 
-const inter = Inter({ subsets: ["latin"] })
-const cairo = Cairo({ subsets: ["arabic"] })
+const inter = Inter({ subsets: ["latin"] });
+const cairo = Cairo({ subsets: ["arabic"] });
 
 export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "ar" }]
+  return [{ locale: "en" }, { locale: "ar" }];
 }
 
-export default async function LocaleLayout({
+export default async function RootLayout({
   children,
   params: { locale },
 }: {
-  children: React.ReactNode
-  params: { locale: string }
+  children: React.ReactNode;
+  params: { locale: string };
 }) {
-  if (!routing.locales.includes(locale as any)) {
+  let messages;
+
+  try {
+    messages = await getMessages();
+  } catch (error) {
     notFound();
-  }
-  const messages = await getMessages()
-
-  if (!messages) {
-    return(
-      <div>Hi</div>
-    )
-  }
-  let whichFont = cairo
-  if(locale === "ar"){
-     whichFont = cairo
-
-     return (
-      <html lang='ar' dir='rtl' className='font-cairo'>
-        <head>
-          <StructuredData />
-        </head>
-        <body className={whichFont.className}>
-          <NextIntlClientProvider locale='ar' messages={messages}>
-            {children}
-          </NextIntlClientProvider>
-        </body>
-      </html>
-    )
-
-  }else if(locale === 'en'){
-     whichFont = inter
-  }else{
-     whichFont = inter
   }
 
   return (
@@ -58,12 +35,14 @@ export default async function LocaleLayout({
       <head>
         <StructuredData />
       </head>
-      <body className={whichFont.className}>
+      <body className={locale === "ar" ? cairo.className : inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
-  )
+  );
 }
 

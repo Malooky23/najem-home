@@ -10,6 +10,39 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  /* Gradient text headings */
+  .gradient-heading {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80 leading-[1.2] pb-1;
+  }
+  
+  /* Enhanced section gradients with smooth transitions */
+  .bg-gradient-hero {
+    background: linear-gradient(to bottom, rgba(219, 234, 254, 0.6) 0%, rgba(219, 234, 254, 0.2) 70%, rgba(255, 255, 255, 1) 100%);
+  }
+  
+  .bg-gradient-services {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(239, 246, 255, 0.15) 30%, rgba(219, 234, 254, 0.2) 100%);
+  }
+  
+  .bg-gradient-contact {
+    background: linear-gradient(to bottom, rgba(219, 234, 254, 0.2) 0%, rgba(239, 246, 255, 0.3) 50%, rgba(255, 255, 255, 1) 100%);
+  }
+  
+  .bg-gradient-faq {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(239, 246, 255, 0.2) 40%, rgba(219, 234, 254, 0.1) 100%);
+  }
+  
+  /* Section padding adjustments for smooth joins */
+  .section-overlap-top {
+    margin-top: -3rem;
+    padding-top: 5rem;
+  }
+  
+  .section-overlap-bottom {
+    margin-bottom: -3rem;
+    padding-bottom: 5rem;
+  }
 }
 
 @layer base {

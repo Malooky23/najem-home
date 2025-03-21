@@ -5,12 +5,17 @@
     "about": "About",
     "contact": "Contact",
     "getQuote": "Get a Quote",
-    "login": "Login"
+    "login": "Login",
+    "faq": "FAQ",
+    "home": "Home"
   },
   "Footer": {
     "copyright": "© 2025 Najem Aleen Shipping. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
+  },
+  "Breadcrumbs": {
+    "home": "Home"
   },
   "Index": {
     "heroTitle": "Comprehensive Logistics Services in the UAE",
@@ -25,7 +30,7 @@
     },
     "freightForwarding": {
       "title": "Freight Forwarding",
-      "description": "Expert consolidation services for import/export, ensuring efficient handling of your cargo."
+      "description": "Expert and reliable freight forwarding solutions tailored to your needs."
     },
     "customsClearance": {
       "title": "Customs Clearance",
@@ -34,6 +39,18 @@
     "carTransportation": {
       "title": "Car Transportation",
       "description": "Worldwide car transport services with all necessary paperwork handled for you."
+    },
+    "packagingRepackaging": {
+      "title": "Packaging & Repackaging",
+      "description": "Professional packaging and repackaging services."
+    },
+    "warehousingSolutions": {
+      "title": "Warehousing Solutions",
+      "description": "Secure and flexible warehousing solutions."
+    },
+    "logisticsConsulting": {
+      "title": "Logistics Consultation",
+      "description": "Get expert advice on optimizing your logistics and supply chain operations."
     },
     "contactTitle": "Contact Us",
     "contactDescription": "Get in touch for efficient logistics solutions",
@@ -45,7 +62,220 @@
     "mapsAvailability": "Get Directions",
     "emailUs": "Email Us",
     "emailNow": "Email Us",
-    "emailAddress": "sales@najemaleen.com"
+    "emailAddress": "sales@najemaleen.com",
+    "viewAllServices": "View All Services"
+  },
+  "ServicesPage": {
+    "heroTitle": "Logistics Services",
+    "heroDescription": "Comprehensive shipping and logistics solutions for businesses of all sizes across the UAE and beyond.",
+    "additionalTitle": "Need a Custom Logistics Solution?",
+    "additionalDescription": "Contact our team for personalized service tailored to your specific business needs.",
+    "contactButton": "Get in Touch"
+  },
+  "Services": {
+    "common": {
+      "services": "Services",
+      "contactTitle": "Get in Touch",
+      "contactDescription": "Have questions about our services? Our team is ready to assist you.",
+      "contactButton": "Contact Us",
+      "phone": "Phone",
+      "email": "Email",
+      "ctaTitle": "Ready to Get Started?",
+      "ctaDescription": "Contact our team today to discuss your specific shipping needs and get a customized solution.",
+      "ctaButton": "Request a Quote",
+      "relatedServicesTitle": "Related Services",
+      "allServices": "View All Services",
+      "contactCta": "Contact Us Today"
+    },
+    "containerShipping": {
+      "Title": "Container Shipping Services",
+      "Description": "Reliable and efficient container shipping solutions for your international trade needs. We handle FCL and LCL shipments.",
+      "title": "Container Shipping",
+      "heroDescription": "Efficient container shipping services for businesses with large-scale logistics needs throughout the UAE and internationally.",
+      "descriptionTitle": "About Our Container Shipping Services",
+      "fullDescription": "At Najem Aleen Shipping, we provide comprehensive container shipping services designed for businesses that need to transport large volumes of goods efficiently. Our solutions cover FCL (Full Container Load) and LCL (Less than Container Load) options, with door-to-door services available throughout the UAE and to international destinations.",
+      "featuresTitle": "Key Benefits",
+      "feature1": "Competitive rates for both FCL and LCL shipments",
+      "feature2": "Direct shipping routes to minimize transit times",
+      "feature3": "Real-time shipment tracking and monitoring",
+      "feature4": "Secure handling and specialized containers for special cargo",
+      "feature5": "Comprehensive insurance coverage options",
+      "processTitle": "Our Container Shipping Process",
+      "processDescription": "Our streamlined container shipping process ensures your cargo moves efficiently from origin to destination:",
+      "step1": "Initial consultation to understand your shipping requirements",
+      "step2": "Selection of appropriate container size and shipping method",
+      "step3": "Professional loading and securing of cargo",
+      "step4": "Documentation preparation and customs clearance",
+      "step5": "Final delivery to the designated destination",
+      "related1": "Customs Clearance Services",
+      "related1Link": "/services/customs-clearance",
+      "related2": "Freight Forwarding",
+      "related2Link": "/services/freight-forwarding",
+      "related3": "Warehousing Solutions",
+      "related3Link": "/services/warehousing-solutions"
+    },
+    "freightForwarding": {
+      "Title": "Freight Forwarding Services",
+      "Description": "Comprehensive freight forwarding solutions, managing your cargo's journey from origin to destination, including air, sea, and land.",
+      "title": "Freight Forwarding",
+      "heroDescription": "Expert consolidation services for import and export operations throughout the UAE and international markets.",
+      "descriptionTitle": "About Our Freight Forwarding Services",
+      "fullDescription": "Najem Aleen Shipping offers comprehensive freight forwarding services that streamline the movement of your goods across international borders. Our team of experts handles the complexities of transportation logistics, ensuring efficient cargo movement while managing all necessary documentation and regulatory requirements.",
+      "featuresTitle": "Key Benefits",
+      "feature1": "Comprehensive cargo consolidation and deconsolidation services",
+      "feature2": "Multi-modal transportation solutions (air, sea, and land)",
+      "feature3": "Advanced cargo tracking systems for real-time updates",
+      "feature4": "Expert handling of documentation and regulatory compliance",
+      "feature5": "Cost-effective routing and carrier selection",
+      "processTitle": "Our Freight Forwarding Process",
+      "processDescription": "We follow a systematic approach to ensure your freight moves efficiently:",
+      "step1": "Initial consultation to determine shipping requirements and timeline",
+      "step2": "Strategic planning for optimal routing and carrier selection",
+      "step3": "Preparation and verification of all necessary documentation",
+      "step4": "Coordination of pickup, transportation, and delivery",
+      "step5": "Continuous monitoring and status updates throughout transit",
+      "related1": "Container Shipping",
+      "related1Link": "/services/container-shipping",
+      "related2": "Customs Clearance",
+      "related2Link": "/services/customs-clearance",
+      "related3": "Logistics Consultation",
+      "related3Link": "/services/logistics-consultation"
+    },
+    "customsClearance": {
+      "Title": "Customs Clearance Services",
+      "Description": "Expert customs clearance services to ensure smooth and timely import and export of your goods, minimizing delays and costs.",
+      "title": "Customs Clearance",
+      "heroDescription": "Streamlined customs clearance solutions for all UAE ports and airports, ensuring compliance and efficiency.",
+      "descriptionTitle": "About Our Customs Clearance Services",
+      "fullDescription": "Najem Aleen Shipping provides expert customs clearance services across all major ports and airports in the UAE. Our team of licensed customs brokers ensures smooth and compliant processing of your shipments, handling all documentation, duty calculations, and regulatory requirements to prevent delays and penalties.",
+      "featuresTitle": "Key Benefits",
+      "feature1": "Licensed customs brokers with in-depth knowledge of UAE regulations",
+      "feature2": "Handling of all documentation, including permits and certificates",
+      "feature3": "Accurate duty and tax calculations to prevent overpayment",
+      "feature4": "Expedited clearance options for time-sensitive shipments",
+      "feature5": "Compliance management to prevent delays and penalties",
+      "processTitle": "Our Customs Clearance Process",
+      "processDescription": "Our systematic approach to customs clearance ensures efficiency and compliance:",
+      "step1": "Pre-arrival review of shipment details and documentation",
+      "step2": "Classification of goods and duty determination",
+      "step3": "Submission of documents to customs authorities",
+      "step4": "Resolution of any customs inquiries or inspections",
+      "step5": "Release of goods and coordination with transportation",
+      "related1": "Container Shipping",
+      "related1Link": "/services/container-shipping",
+      "related2": "Freight Forwarding",
+      "related2Link": "/services/freight-forwarding",
+      "related3": "Car Transportation",
+      "related3Link": "/services/car-transportation"
+    },
+    "carTransportation": {
+      "Title": "Car Transportation Services",
+      "Description": "Safe and secure car transportation services, both domestic and international, with a focus on vehicle protection and timely delivery.",
+      "title": "Car Transportation",
+      "heroDescription": "Specialized vehicle shipping services for importing and exporting cars throughout the UAE and internationally.",
+      "descriptionTitle": "About Our Car Transportation Services",
+      "fullDescription": "Najem Aleen Shipping specializes in the safe and secure transportation of vehicles to and from the UAE. Whether you're importing a single vehicle or exporting multiple cars, our comprehensive service handles all aspects of vehicle shipping, including documentation, customs clearance, and secure transportation methods.",
+      "featuresTitle": "Key Benefits",
+      "feature1": "Door-to-port, port-to-port, and door-to-door shipping options",
+      "feature2": "Specialized handling for luxury, classic, and high-value vehicles",
+      "feature3": "Complete documentation assistance for vehicle imports and exports",
+      "feature4": "Customs clearance expertise specific to vehicle regulations",
+      "feature5": "Insurance coverage options for complete peace of mind",
+      "processTitle": "Our Car Transportation Process",
+      "processDescription": "We follow a systematic approach to ensure your vehicle is transported safely and efficiently:",
+      "step1": "Initial consultation to understand your vehicle shipping needs",
+      "step2": "Preparation of all necessary documentation and permits",
+      "step3": "Professional vehicle inspection and condition reporting",
+      "step4": "Secure loading, shipping, and monitoring during transit",
+      "step5": "Customs clearance and final delivery or collection",
+      "related1": "Customs Clearance",
+      "related1Link": "/services/customs-clearance",
+      "related2": "Freight Forwarding",
+      "related2Link": "/services/freight-forwarding",
+      "related3": "Logistics Consultation",
+      "related3Link": "/services/logistics-consultation"
+    },
+    "packagingRepackaging": {
+      "Title": "Packaging & Repackaging Services",
+      "Description": "Professional packaging and repackaging services to ensure your goods are protected during transit and storage.",
+      "title": "Packaging & Repackaging",
+      "heroDescription": "Professional packaging solutions to ensure the safe transit of your goods, from fragile items to bulk shipments.",
+      "descriptionTitle": "About Our Packaging Services",
+      "fullDescription": "Najem Aleen Shipping offers comprehensive packaging and repackaging services designed to protect your goods during transit. Our team uses industry-leading materials and techniques to ensure items of all types—from delicate electronics to industrial equipment—arrive at their destination in perfect condition.",
+      "featuresTitle": "Key Benefits",
+      "feature1": "Custom packaging solutions tailored to specific product requirements",
+      "feature2": "Specialized materials for fragile, valuable, or sensitive items",
+      "feature3": "Export-compliant packaging that meets international shipping standards",
+      "feature4": "Consolidation services to optimize shipping costs",
+      "feature5": "Eco-friendly packaging options to reduce environmental impact",
+      "processTitle": "Our Packaging Process",
+      "processDescription": "Our methodical approach ensures your items are properly protected for shipping:",
+      "step1": "Assessment of item characteristics and shipping requirements",
+      "step2": "Selection of appropriate packaging materials and methods",
+      "step3": "Professional packing with appropriate cushioning and protection",
+      "step4": "Securing and sealing packages to prevent tampering",
+      "step5": "Labeling and documentation preparation for shipping",
+      "related1": "Warehousing Solutions",
+      "related1Link": "/services/warehousing-solutions",
+      "related2": "Freight Forwarding",
+      "related2Link": "/services/freight-forwarding",
+      "related3": "Container Shipping",
+      "related3Link": "/services/container-shipping"
+    },
+    "warehousingSolutions": {
+      "Title": "Warehousing Solutions",
+      "Description": "Secure and flexible warehousing solutions tailored to your storage needs, with inventory management and distribution services.",
+      "title": "Warehousing Solutions",
+      "heroDescription": "Secure storage facilities in Dubai offering flexible short and long-term warehousing options for all types of cargo.",
+      "descriptionTitle": "About Our Warehousing Services",
+      "fullDescription": "Najem Aleen Shipping provides comprehensive warehousing solutions in strategic locations throughout Dubai. Our secure facilities offer flexible storage options for businesses of all sizes, with services ranging from short-term storage to long-term inventory management with value-added services.",
+      "featuresTitle": "Key Benefits",
+      "feature1": "Strategic warehouse locations with excellent transportation access",
+      "feature2": "Short and long-term storage options with flexible terms",
+      "feature3": "Climate-controlled facilities for sensitive goods",
+      "feature4": "Advanced inventory management systems",
+      "feature5": "Value-added services including pick and pack, labeling, and distribution",
+      "processTitle": "Our Warehousing Process",
+      "processDescription": "Our warehousing solutions are designed for efficiency and security:",
+      "step1": "Initial consultation to understand your storage requirements",
+      "step2": "Allocation of appropriate storage space based on goods type and volume",
+      "step3": "Professional receiving and inventory documentation",
+      "step4": "Secure storage with regular inventory checks and monitoring",
+      "step5": "Coordinated retrieval and dispatch when required",
+      "related1": "Packaging & Repackaging",
+      "related1Link": "/services/packaging-repackaging",
+      "related2": "Freight Forwarding",
+      "related2Link": "/services/freight-forwarding",
+      "related3": "Container Shipping",
+      "related3Link": "/services/container-shipping"
+    },
+    "logisticsConsulting": {
+      "Title": "Logistics Consultation Services",
+      "Description": "Expert advice on optimizing your supply chain and logistics operations for businesses throughout the UAE.",
+      "title": "Logistics Consultation",
+      "heroDescription": "Expert advice on optimizing your supply chain and logistics operations for maximum efficiency and cost-effectiveness.",
+      "descriptionTitle": "About Our Logistics Consultation Services",
+      "fullDescription": "Najem Aleen Shipping offers specialized logistics consultation services to help businesses optimize their supply chain operations. Our team of experienced consultants analyzes your current logistics processes and develops tailored strategies to improve efficiency, reduce costs, and enhance overall performance.",
+      "featuresTitle": "Key Benefits",
+      "feature1": "Comprehensive assessment of current logistics operations",
+      "feature2": "Custom-tailored supply chain optimization strategies",
+      "feature3": "Cost reduction analysis and implementation plans",
+      "feature4": "Regulatory compliance guidance for international trade",
+      "feature5": "Technology integration recommendations for improved visibility",
+      "processTitle": "Our Consultation Process",
+      "processDescription": "We follow a systematic approach to logistics consultation:",
+      "step1": "Initial assessment and data gathering about your current operations",
+      "step2": "Analysis of logistics processes, costs, and performance metrics",
+      "step3": "Development of customized optimization strategies",
+      "step4": "Presentation of findings and recommendations",
+      "step5": "Implementation support and performance monitoring",
+      "related1": "Freight Forwarding",
+      "related1Link": "/services/freight-forwarding",
+      "related2": "Customs Clearance",
+      "related2Link": "/services/customs-clearance",
+      "related3": "Warehousing Solutions",
+      "related3Link": "/services/warehousing-solutions"
+    }
   },
   "LanguageSwitcher": {
     "switchTo": "English"
@@ -57,6 +287,8 @@
   },
   "FAQ": {
     "title": "Frequently Asked Questions",
+    "description": "Find answers to commonly asked questions about our shipping and logistics services in the UAE.",
+    "viewAllFAQs": "View All FAQs",
     "questions": {
       "shipping_process": {
         "question": "What is the step-by-step process for importing commercial goods into Dubai and other emirates in the UAE through your logistics services?",
@@ -97,4 +329,3 @@
     }
   }
 }
-

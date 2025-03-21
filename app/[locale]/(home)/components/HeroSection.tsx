@@ -9,7 +9,7 @@ export default function HeroSection() {
   const isRtl = locale === "ar"
 
   return (
-    <section className="relative overflow-hidden bg-gradient-hero pt-8 pb-32">
+    <section className="relative overflow-hidden bg-gradient-hero pt-8 pb-32 h-[100vh] flex items-center justify-center">
       {/* Light pattern overlay */}
       <div className="absolute inset-0 opacity-20 pattern-dots pattern-blue-500 pattern-bg-white pattern-size-2 pattern-opacity-10"></div>
       
