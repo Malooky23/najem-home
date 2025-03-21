@@ -277,6 +277,58 @@
       "related3Link": "/services/warehousing-solutions"
     }
   },
+  "About": {
+    "heroTitle": "About Najem Aleen Shipping",
+    "heroSubtitle": "Your Trusted Partner for Shipping, Customs Clearance, and Logistics in Dubai",
+    "introTitle": "Who We Are",
+    "introDescription1": "At Najem Aleen Shipping, we are more than just a Dubai-based shipping and logistics company; we are your strategic partner in navigating the complexities of global trade. Founded in 2022 and headquartered in Al Qusais, the heart of Dubai's logistics hub, we bring a fresh perspective combined with decades of deep-rooted industry experience.",
+    "introDescription2": "Our mission is to provide seamless, technology-driven, and customer-focused logistics solutions, including customs clearance, freight forwarding, and import/export services, that empower businesses to thrive in the global marketplace.",
+    "contactUs": "Contact Us",
+    "ourServices": "Our Services",
+    "foundationTitle": "Our Foundation: Experience Meets Innovation",
+    "foundationDescription": "Where deep industry knowledge combines with cutting-edge approaches",
+    "foundationContent1": "While Najem Aleen Shipping was established in 2022, our roots in the UAE shipping and logistics sector run much deeper. Our founders have been integral players in the region's shipping and logistics industry since 1999, witnessing and contributing to its remarkable growth, including the development of Dubai Customs procedures.",
+    "foundationContent2": "This extensive experience provides us with an unparalleled understanding of the local market, UAE customs regulations, and the evolving needs of our clients. We combine this legacy of knowledge with a \"tech-first\" approach, embracing cutting-edge technology to deliver unparalleled efficiency and transparency for all your import and export needs.",
+    "servicesTitle": "Comprehensive Logistics Services",
+    "servicesDescription": "We offer a complete suite of logistics solutions designed to handle every aspect of your supply chain",
+    "service1Title": "End-to-End Logistics & Import/Export",
+    "service1Description": "We manage your entire supply chain, with a strong focus on key trade routes connecting the USA, Europe, the Middle East, and Africa.",
+    "service2Title": "Customs Clearance",
+    "service2Description": "As a registered agent with both Dubai Customs and Sharjah Customs, we ensure seamless and compliant customs clearance across all Emirates.",
+    "service3Title": "Vehicle Shipping",
+    "service3Description": "We provide expert vehicle shipping solutions, both domestically and internationally, utilizing specialized car transporters and sea freight options.",
+    "service4Title": "Warehousing & Packing",
+    "service4Description": "Our strategically located warehouses in Dubai offer secure storage, along with professional packing and repacking services.",
+    "service5Title": "Free Zone Logistics",
+    "service5Description": "We possess specialized expertise in navigating the unique regulations of UAE free zones, facilitating smooth import/export operations.",
+    "service6Title": "Cross-Stuffing & Freight Forwarding",
+    "service6Description": "We optimize container utilization to minimize your shipping costs and provide reliable freight forwarding services.",
+    "technologyTitle": "Technology at the Forefront",
+    "technologyDescription1": "Najem Aleen Shipping is a \"tech-first\" logistics company. We leverage cutting-edge technology to provide a superior customer experience and optimize operational efficiency. Our proprietary warehouse management and shipment manager software gives you real-time visibility into your shipments, inventory, and orders, crucial for efficient supply chain management.",
+    "technologyDescription2": "Our dedicated app integrates seamlessly with popular e-commerce platforms like Shopify, providing a streamlined logistics solution for online retailers. We are also fully integrated with the Digital Dubai initiative, providing streamlined access to platforms including DubaiTrade, Dubai Ports, and The Ministry of Foreign Affairs.",
+    "valuesTitle": "Our Commitment to Excellence",
+    "valuesDescription": "Core values that drive our operations and customer service",
+    "value1Title": "Expertise",
+    "value1Description": "We leverage decades of industry experience to navigate any logistical challenge with confidence.",
+    "value2Title": "Reliability",
+    "value2Description": "We deliver on our promises with consistent, dependable service that our clients can count on.",
+    "value3Title": "Customer Focus",
+    "value3Description": "We prioritize understanding and meeting the unique needs of each business we serve.",
+    "value4Title": "Innovation",
+    "value4Description": "We embrace technology and innovative solutions to stay ahead in a rapidly evolving industry.",
+    "marketTitle": "The UAE Logistics Market",
+    "marketDescription": "Najem Aleen shipping is proud to be a part of the rapid growth of the UAE logistics market, driven by the expansion of the e-commerce sector.",
+    "marketPast": "UAE logistics market value in 2023",
+    "marketFuture": "Projected market value by 2028",
+    "statExperience": "Industry Expertise Since",
+    "statFounded": "Company Founded",
+    "statCountries": "Countries Served",
+    "statDedication": "Customer Satisfaction",
+    "ctaTitle": "Choose Najem Aleen for Your Dubai Logistics Needs",
+    "ctaDescription": "Partner with us and experience the difference that a dedicated, experienced, and technology-driven logistics provider can make.",
+    "ctaButton1": "Contact Our Team",
+    "ctaButton2": "Explore Services"
+  },
   "LanguageSwitcher": {
     "switchTo": "English"
   },
@@ -326,6 +378,117 @@
         "question": "What types of goods can you ship? Are there any restrictions on the types of goods you handle (e.g., hazardous materials, perishable goods)?",
         "answer": "Handles a wide range of goods. Restrictions apply to hazardous and prohibited items. Contact for specific inquiries about perishable goods."
       }
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with our team for inquiries about our shipping and logistics services. We're here to help with your transportation needs throughout the UAE.",
+    "mapLoading": "Loading map...",
+    "form": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "namePlaceholder": "Enter your full name",
+      "nameRequired": "Please enter your name",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@example.com",
+      "emailValid": "Please enter a valid email address",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+971 5X XXX XXXX",
+      "phoneRequired": "Please enter your phone number",
+      "service": "Service of Interest",
+      "servicePlaceholder": "Select a service",
+      "serviceOptions": {
+        "containerShipping": "Container Shipping",
+        "freightForwarding": "Freight Forwarding",
+        "customsClearance": "Customs Clearance",
+        "carTransportation": "Car Transportation",
+        "warehousing": "Warehousing Solutions",
+        "other": "Other Services"
+      },
+      "message": "Your Message",
+      "messagePlaceholder": "Please describe your inquiry or requirements...",
+      "messageRequired": "Please enter your message",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "successTitle": "Message Sent",
+      "successMessage": "Thank you for contacting us. We'll get back to you shortly.",
+      "errorTitle": "Error",
+      "errorMessage": "There was a problem sending your message. Please try again."
+    },
+    "info": {
+      "phone": "Phone",
+      "call": "Call",
+      "whatsapp": "WhatsApp",
+      "message": "Message",
+      "email": "Email",
+      "write": "Write",
+      "address": "Our Address",
+      "addressDetails": "Al Qusais Industrial Area 1\nDubai, United Arab Emirates",
+      "office": "Office",
+      "officeDetails": "Head Office - Dubai",
+      "hours": "Working Hours",
+      "hoursDetails": "Monday - Friday: 8:00 AM - 6:00 PM\nSaturday: 8:00 AM - 3:00 PM",
+      "getDirections": "Directions"
+    }
+  },
+  "BusinessHours": {
+    "notice": {
+      "title": "Special Notice"
+    },
+    "regular": {
+      "title": "Regular Hours",
+      "hours": "Monday - Friday: 8:00 AM - 6:00 PM\nSaturday: 8:00 AM - 3:00 PM\nSunday: Closed",
+      "notice": ""
+    },
+    "ramadan": {
+      "title": "Ramadan Hours",
+      "hours": "Monday - Thursday: 9:00 AM - 3:00 PM\nFriday: 9:00 AM - 12:00 PM\nSaturday - Sunday: Closed",
+      "notice": "Our hours are adjusted during the holy month of Ramadan."
+    },
+    "eid-al-fitr": {
+      "title": "Eid Al-Fitr Holiday",
+      "hours": "Our office will be closed during Eid Al-Fitr holiday.\nWe will resume normal operations after the holiday.",
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+    },
+    "eid-al-adha": {
+      "title": "Eid Al-Adha Holiday",
+      "hours": "Our office will be closed during Eid Al-Adha holiday.\nWe will resume normal operations after the holiday.",
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+    },
+    "new-year": {
+      "title": "New Year Holiday",
+      "hours": "Our office will have limited hours during the New Year holiday.\nDecember 31 - January 1: Closed",
+      "notice": "We wish you a Happy New Year!"
+    },
+    "national-day": {
+      "title": "UAE National Day",
+      "hours": "Our office will be closed during the UAE National Day holiday.\nWe will resume normal operations after the holiday.",
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+    },
+    "commemoration-day": {
+      "title": "Commemoration Day",
+      "hours": "Our office will be closed for Commemoration Day.\nWe will resume normal operations the following day.",
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+    },
+    "hijri-new-year": {
+      "title": "Hijri New Year",
+      "hours": "Our office will be closed for Hijri New Year.\nWe will resume normal operations the following day.",
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+    },
+    "prophet-muhammads-birthday": {
+      "title": "Prophet Muhammad's Birthday",
+      "hours": "Our office will be closed for Prophet Muhammad's Birthday.\nWe will resume normal operations the following day.",
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+    },
+    "isra-and-miraj": {
+      "title": "Isra and Mi'raj",
+      "hours": "Our office will be closed for Isra and Mi'raj.\nWe will resume normal operations the following day.",
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+    },
+    "shortHoliday": {
+      "title": "Special Closure Notice",
+      "hours": "Our office will be closed on this day.\nWe will resume normal operations the following day.",
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
     }
   }
 }

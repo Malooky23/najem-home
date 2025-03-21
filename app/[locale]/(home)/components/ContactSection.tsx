@@ -103,7 +103,7 @@ export default function ContactSection() {
                     <span className={`text-lg font-semibold block transition-colors duration-300 ${method.textColor} ${method.iconHoverColor}`}>
                       {t(method.labelKey)}
                     </span>
-                    <span className="text-sm text-muted-foreground block transition-colors duration-300 group-hover:text-current/70">
+                    <span  className="text-sm text-muted-foreground block transition-colors duration-300 group-hover:text-current/70">
                       {t(method.descriptionKey)}
                     </span>
                   </div>
