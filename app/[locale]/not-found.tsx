@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl"
-import Link from "next/link"
+
 import { Button } from "@/components/ui/button"
 import { HomeIcon } from "lucide-react"
+import { Link } from "@/i18n/routing"
 
 export default function NotFound() {
   const t = useTranslations("404")

@@ -1,11 +1,14 @@
+import React from 'react';
+
 import { useLocale, useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 
 export default function HeroSection() {
   const t = useTranslations("Index")
   const locale = useLocale()
+
   const isRtl = locale === "ar"
 
   return (

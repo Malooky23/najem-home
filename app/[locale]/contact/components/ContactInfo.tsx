@@ -32,7 +32,6 @@ export default function ContactInfo() {
     : null;
   
   // Google Maps URL from config
-  const googleMapsUrl = contactDetails.googleMapsUrl;
   const contactMethods = [
     {
       icon: Phone,
@@ -110,7 +109,7 @@ export default function ContactInfo() {
                   className="h-8 gap-1 text-xs text-blue-600 hover:bg-blue-50 hover:text-blue-700"
                   asChild
                 >
-                  <Link href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
+                  <Link href={contactDetails.googleMapsUrl} target="_blank" rel="noopener noreferrer">
                     <MapPin className="h-3.5 w-3.5" />
                     <span>{t("getDirections")}</span>
                     <ExternalLink className="h-3 w-3" />
