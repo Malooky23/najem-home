@@ -38,3 +38,8 @@ next-env.d.ts
 
 # Build output
 .next
+.rooignore
+.roomodes
+.roo
+memory-bank
+insert-variables.sh

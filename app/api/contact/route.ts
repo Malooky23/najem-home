@@ -149,10 +149,12 @@ export async function POST(request: NextRequest) {
       });
       
       // Return success response
-      return NextResponse.json({ 
+      return NextResponse.json(
+        { 
         success: true, 
         message: 'Form submitted successfully' 
-      });
+      }
+    );
       
     } catch (emailError) {
       console.error('Error sending emails:', emailError);
