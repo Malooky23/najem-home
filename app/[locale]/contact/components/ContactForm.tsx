@@ -176,24 +176,11 @@ export default function ContactForm({ locale }: ContactFormProps) {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="containerShipping">
-                        {t("serviceOptions.containerShipping")}
-                      </SelectItem>
-                      <SelectItem value="freightForwarding">
-                        {t("serviceOptions.freightForwarding")}
-                      </SelectItem>
-                      <SelectItem value="customsClearance">
-                        {t("serviceOptions.customsClearance")}
-                      </SelectItem>
-                      <SelectItem value="carTransportation">
-                        {t("serviceOptions.carTransportation")}
-                      </SelectItem>
-                      <SelectItem value="warehousing">
-                        {t("serviceOptions.warehousing")}
-                      </SelectItem>
-                      <SelectItem value="other">
-                        {t("serviceOptions.other")}
-                      </SelectItem>
+                      {Object.entries(t.raw("serviceOptions")).map(([key, label]) => (
+                        <SelectItem key={key} value={key}>
+                          {label as string}
+                        </SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                   <FormMessage />

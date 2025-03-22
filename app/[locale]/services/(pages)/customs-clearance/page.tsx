@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   return {
     title: isArabic 
-      ? "التخليص الجمركي | نجم العين للشحن"
+      ? "التخليص الجمركي | نجم الين للشحن"
       : "Customs Clearance | Najem Aleen Shipping",
     description: isArabic
       ? "حلول شاملة للتخليص الجمركي في موانئ ومطارات دبي وأبوظبي والشارقة، مع إدارة الوثائق وتقييم الرسوم وضمان الامتثال التنظيمي"

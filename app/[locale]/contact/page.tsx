@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: isArabic
-      ? "اتصل بنا | نجم العين للشحن"
+      ? "اتصل بنا | نجم الين للشحن"
       : "Contact Us | Najem Aleen Shipping",
     description: isArabic
-      ? "تواصل مع نجم العين للشحن للحصول على خدمات لوجستية وشحن موثوقة في جميع أنحاء الإمارات العربية المتحدة. استفسر عن خدماتنا في دبي وأبوظبي والشارقة."
+      ? "تواصل مع نجم الين للشحن للحصول على خدمات لوجستية وشحن موثوقة في جميع أنحاء الإمارات العربية المتحدة. استفسر عن خدماتنا في دبي وأبوظبي والشارقة."
       : "Get in touch with Najem Aleen Shipping for reliable logistics and shipping services throughout the UAE. Inquire about our services in Dubai, Abu Dhabi, and Sharjah.",
     alternates: {
       canonical: `/${params.locale}/contact`,

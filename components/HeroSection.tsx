@@ -12,7 +12,7 @@ export default function HeroSection() {
     <section className="relative overflow-hidden bg-gradient-hero pt-8 pb-32">
       {/* Light pattern overlay */}
       <div className="absolute inset-0 opacity-20 pattern-dots pattern-blue-500 pattern-bg-white pattern-size-2 pattern-opacity-10"></div>
-      
+
       <div className="container relative py-12 md:py-24 lg:py-32">
         <div className="flex flex-col items-center md:grid md:grid-cols-2 md:gap-12 ">
           {/* Visual elements for mobile */}
@@ -39,6 +39,7 @@ export default function HeroSection() {
               width={1000}
               className="w-[500px] h-auto"
               priority // Add priority for LCP image
+              sizes="(max-width: 768px) 500px, 100vw"
             />
           </div>
 
@@ -76,10 +77,10 @@ export default function HeroSection() {
           <div className="relative hidden md:flex items-center justify-center">
             <div className="absolute -right-1/4 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-secondary/10" />
             <div className="absolute -left-1/4 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-primary/10" />
-            <Image 
-              src="/najem-logo-sq.png" 
+            <Image
+              src="/najem-logo-sq.png"
               alt="Najem Aleen Logo"
-              height={306 / 2} 
+              height={306 / 2}
               width={1076 / 2}
               priority
             />

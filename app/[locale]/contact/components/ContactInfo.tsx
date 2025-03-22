@@ -14,8 +14,11 @@ import {
 } from "lucide-react";
 import { WhatsApp } from "@/components/Icons";
 import { getCurrentBusinessPeriod, getShortHolidayInfo } from "@/lib/business-periods";
+import contactDetails from "@/config/contact-details.json"  ;
+
 
 export default function ContactInfo() {
+
   const t = useTranslations("Contact.info");
   const businessT = useTranslations("BusinessHours");
   const locale = useLocale();
@@ -24,38 +27,37 @@ export default function ContactInfo() {
   const currentPeriod = getCurrentBusinessPeriod();
   
   // Get special short holiday info if applicable
-  const shortHolidayInfo = currentPeriod === 'short-holiday' 
+  const shortHolidayInfo = currentPeriod === 'short-holiday'
     ? getShortHolidayInfo(locale)
     : null;
   
-  // Google Maps URL for our location
-  const googleMapsUrl = "https://maps.app.goo.gl/e65KNCL1kUMD9NzU7";
-  
+  // Google Maps URL from config
+  const googleMapsUrl = contactDetails.googleMapsUrl;
   const contactMethods = [
     {
       icon: Phone,
       title: t("phone"),
-      details: "+971 4 257 9791",
+      details: contactDetails.phone, // Use phone from config
       action: t("call"),
-      href: "tel:+97142579791",
+      href: `tel:${contactDetails.phone}`, // Use phone from config
       color: "text-blue-600",
       bgColor: "bg-blue-100/50",
     },
     {
       icon: WhatsApp,
       title: t("whatsapp"),
-      details: "+971 54 996 8485",
+      details: contactDetails.whatsapp, // Use whatsapp from config
       action: t("message"),
-      href: "https://wa.me/971549968485",
+      href: `https://wa.me/${contactDetails.whatsapp}`, // Use whatsapp from config
       color: "text-green-600",
       bgColor: "bg-green-100/50",
     },
     {
       icon: Mail,
       title: t("email"),
-      details: "sales@najemaleen.com",
+      details: contactDetails.email, // Use email from config
       action: t("write"),
-      href: "mailto:sales@najemaleen.com",
+      href: `mailto:${contactDetails.email}`, // Use email from config
       color: "text-amber-600",
       bgColor: "bg-amber-100/50",
     },
@@ -66,8 +68,8 @@ export default function ContactInfo() {
       {/* Contact cards */}
       <div className="space-y-4">
         {contactMethods.map((method, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="flex items-center p-4 rounded-lg border bg-card shadow-sm"
           >
             <div className={`flex-shrink-0 p-3 rounded-full ${method.bgColor}`}>
@@ -80,10 +82,10 @@ export default function ContactInfo() {
                 {method.details}
               </p>
             </div>
-            <Button 
-              asChild 
-              variant="outline" 
-              size="sm" 
+            <Button
+              asChild
+              variant="outline"
+              size="sm"
               className="flex-shrink-0 w-[80px] justify-center"
             >
               <Link href={method.href} target="_blank" rel="noopener noreferrer">
@@ -162,7 +164,7 @@ export default function ContactInfo() {
           )}
           
           {/* Special period notice */}
-          {((shortHolidayInfo && shortHolidayInfo.notice) || 
+          {((shortHolidayInfo && shortHolidayInfo.notice) ||
             (currentPeriod !== 'regular' && businessT(`${currentPeriod}.notice`, { fallback: '' }) !== '')) && (
             <div className="flex items-start mt-2 bg-muted/60 p-3 rounded-lg">
               {currentPeriod === 'short-holiday' ? (
@@ -176,8 +178,8 @@ export default function ContactInfo() {
                 </h3>
                 <p className="text-muted-foreground text-sm">
                   {/* Emergency contact numbers should also be LTR */}
-                  <span 
-                    dangerouslySetInnerHTML={{ 
+                  <span
+                    dangerouslySetInnerHTML={{
                       __html: formatEmergencyNumbers(
                         shortHolidayInfo 
                           ? shortHolidayInfo.notice 

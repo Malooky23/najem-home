@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   return {
     title: isArabic 
-      ? "استشارات الخدمات اللوجستية | نجم العين للشحن"
+      ? "استشارات الخدمات اللوجستية | نجم الين للشحن"
       : "Logistics Consultation | Najem Aleen Shipping",
     description: isArabic
       ? "خدمات استشارية متخصصة لتحسين عمليات سلسلة التوريد والخدمات اللوجستية للشركات في الإمارات العربية المتحدة"

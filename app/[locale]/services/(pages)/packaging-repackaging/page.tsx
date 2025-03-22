@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   return {
     title: isArabic 
-      ? "التعبئة وإعادة التعبئة | نجم العين للشحن"
+      ? "التعبئة وإعادة التعبئة | نجم الين للشحن"
       : "Packaging & Repackaging | Najem Aleen Shipping",
     description: isArabic
       ? "خدمات تعبئة احترافية للعناصر الهشة، وتعبئة التجزئة، وتجميع الشحنات، باستخدام مواد وتقنيات متخصصة للنقل الآمن"

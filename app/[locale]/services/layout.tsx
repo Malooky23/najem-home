@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: { locale: string }}
   
   return {
     title: isArabic 
-      ? "خدماتنا | نجم العين للشحن"
+      ? "خدماتنا | نجم الين للشحن"
       : "Our Services | Najem Aleen Shipping",
     description: isArabic
       ? "استكشف مجموعة خدماتنا الشاملة بما في ذلك شحن الحاويات والتخليص الجمركي وإدارة سلسلة التوريد للشركات في الإمارات العربية المتحدة"

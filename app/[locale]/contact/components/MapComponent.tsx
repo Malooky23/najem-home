@@ -2,16 +2,21 @@
 
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import contactDetails from '@/config/contact-details.json'; // Import contact details
 
 export default function MapComponent() {
   const t = useTranslations("Contact");
   const mapRef = useRef<HTMLDivElement>(null);
-  
+
+  // Google Maps URL from config
+  const googleMapsUrl = contactDetails.googleMapsUrl;
+  console.log("Google Maps URL:", googleMapsUrl);
+
   useEffect(() => {
     // This loads the Google Maps iframe only when the component mounts
     if (mapRef.current) {
       const iframe = document.createElement('iframe');
-      
+
       // Updated map embed URL with:
       // - Higher zoom level (16 instead of default)
       // - Road map type (m instead of satellite/terrain)
@@ -27,13 +32,13 @@ export default function MapComponent() {
       iframe.allowFullscreen = false;
       iframe.referrerPolicy = "no-referrer-when-downgrade";
       iframe.title = "Najem Aleen Shipping Location";
-      
+
       // Clear existing content and append iframe
       mapRef.current.innerHTML = '';
       mapRef.current.appendChild(iframe);
     }
   }, []);
-  
+
   return (
     <div>
       <div ref={mapRef} className="h-[450px] w-full bg-muted flex items-center justify-center rounded-xl">
@@ -43,3 +48,17 @@ export default function MapComponent() {
   );
 }
 
+
+/**
+ * Formats text containing phone numbers to ensure numbers display correctly in RTL contexts
+ * Looks for patterns like: +971 54 996 8485 and wraps them in LTR spans
+ */
+function formatEmergencyNumbers(text: string): string {
+  if (!text) return '';
+
+  // Regex to find phone number patterns
+  const phoneRegex = /(\+\d{1,4}\s?\d{1,3}\s?\d{3,4}\s?\d{4})/g;
+
+  // Replace phone numbers with LTR-wrapped versions
+  return text.replace(phoneRegex, '<span dir="ltr">$1</span>');
+}

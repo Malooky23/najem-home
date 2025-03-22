@@ -18,7 +18,7 @@ export default function ServicesSection({ isTitle = true }: ServicesSectionProps
     { icon: CarTransport, key: "carTransportation", href: "/services/car-transportation" },
     { icon: PackageCheck, key: "packagingRepackaging", href: "/services/packaging-repackaging" }, // Added packaging-repackaging
     { icon: Warehouse, key: "warehousingSolutions", href: "/services/warehousing-solutions" }, // Added warehousing-solutions
-    { icon: Users2Icon, key: "logisticsConsulting", href: "/services/warehousing-solutions" }, // Added warehousing-solutions
+    { icon: Users2Icon, key: "logisticsConsulting", href: "/services/logistics-consultation" }, // Added warehousing-solutions
   ]
 
   return (

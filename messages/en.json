@@ -448,12 +448,12 @@
     "eid-al-fitr": {
       "title": "Eid Al-Fitr Holiday",
       "hours": "Our office will be closed during Eid Al-Fitr holiday.\nWe will resume normal operations after the holiday.",
-      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8487"
     },
     "eid-al-adha": {
       "title": "Eid Al-Adha Holiday",
       "hours": "Our office will be closed during Eid Al-Adha holiday.\nWe will resume normal operations after the holiday.",
-      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8487"
     },
     "new-year": {
       "title": "New Year Holiday",
@@ -463,32 +463,32 @@
     "national-day": {
       "title": "UAE National Day",
       "hours": "Our office will be closed during the UAE National Day holiday.\nWe will resume normal operations after the holiday.",
-      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8487"
     },
     "commemoration-day": {
       "title": "Commemoration Day",
       "hours": "Our office will be closed for Commemoration Day.\nWe will resume normal operations the following day.",
-      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8487"
     },
     "hijri-new-year": {
       "title": "Hijri New Year",
       "hours": "Our office will be closed for Hijri New Year.\nWe will resume normal operations the following day.",
-      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8487"
     },
     "prophet-muhammads-birthday": {
       "title": "Prophet Muhammad's Birthday",
       "hours": "Our office will be closed for Prophet Muhammad's Birthday.\nWe will resume normal operations the following day.",
-      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8487"
     },
     "isra-and-miraj": {
       "title": "Isra and Mi'raj",
       "hours": "Our office will be closed for Isra and Mi'raj.\nWe will resume normal operations the following day.",
-      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8487"
     },
     "shortHoliday": {
       "title": "Special Closure Notice",
       "hours": "Our office will be closed on this day.\nWe will resume normal operations the following day.",
-      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8485"
+      "notice": "For urgent matters, please contact our emergency number: +971 54 996 8487"
     }
   }
 }

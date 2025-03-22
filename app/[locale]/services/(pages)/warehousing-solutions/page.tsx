@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   return {
     title: isArabic 
-      ? "حلول التخزين | نجم العين للشحن"
+      ? "حلول التخزين | نجم الين للشحن"
       : "Warehousing Solutions | Najem Aleen Shipping",
     description: isArabic
       ? "مرافق تخزين آمنة في دبي توفر خيارات قصيرة وطويلة الأجل، بما في ذلك التخزين العام، والتخزين المتحكم في درجة الحرارة، وأمان البضائع ذات القيمة العالية"

@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
     
     // Create confirmation email for customer based on locale
     const customerEmailSubject = locale === 'ar' 
-      ? 'شكراً للتواصل مع نجم العين للشحن' 
+      ? 'شكراً للتواصل مع نجم الين للشحن' 
       : 'Thank you for contacting Najem Aleen Shipping';
       
     const customerEmailHTML = locale === 'ar' 
@@ -90,7 +90,7 @@ export async function POST(request: NextRequest) {
             <p><strong>تاريخ الإرسال:</strong> ${currentDate}</p>
           </div>
           <p>نحن نقدر تواصلك معنا وسنبذل قصارى جهدنا للرد في أقرب وقت ممكن.</p>
-          <p>مع أطيب التحيات،<br>فريق نجم العين للشحن</p>
+          <p>مع أطيب التحيات،<br>فريق نجم الين للشحن</p>
         </div>
       `
       : `

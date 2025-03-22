@@ -7,7 +7,7 @@ export async function generateServiceMetadata(locale: string, translationKey: st
 
   return {
     title: isArabic
-      ? `${t(`${translationKey}Title`)} | نجم العين للشحن`
+      ? `${t(`${translationKey}Title`)} | نجم الين للشحن`
       : `${t(`${translationKey}Title`)} | Najem Aleen Shipping`,
     description: isArabic
       ? t(`${translationKey}Description`) 

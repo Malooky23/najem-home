@@ -12,10 +12,10 @@ export async function generateMetadata({ params }: { params: { locale: string }}
   
   return {
     title: isArabic 
-      ? "الأسئلة الشائعة | نجم العين للشحن"
+      ? "الأسئلة الشائعة | نجم الين للشحن"
       : "Frequently Asked Questions | Najem Aleen Shipping",
     description: isArabic
-      ? "إجابات على الأسئلة الشائعة حول خدمات الشحن والخدمات اللوجستية التي تقدمها نجم العين للشحن في الإمارات العربية المتحدة"
+      ? "إجابات على الأسئلة الشائعة حول خدمات الشحن والخدمات اللوجستية التي تقدمها نجم الين للشحن في الإمارات العربية المتحدة"
       : "Find answers to commonly asked questions about our shipping and logistics services in the UAE, including customs clearance, freight forwarding, and more.",
   };
 }
