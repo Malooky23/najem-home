@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Metadata } from "next";
+import { generatePageMetadata } from "@/utils/metadata";
 import FAQSection from "@/components/FAQSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
@@ -8,17 +9,14 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const isArabic = params.locale === 'ar';
-  
-  return {
-    alternates: {
-      canonical: `/${params.locale}/faq`,
-      languages: {
-        'en': '/en/faq',
-        'ar': '/ar/faq',
-      },
-    },
-  };
+  return generatePageMetadata({
+    locale: params.locale,
+    pageName: "faq",
+    titleEn: "Frequently Asked Questions | Najem Aleen Shipping",
+    titleAr: "الأسئلة الشائعة | نجم الين للشحن",
+    descriptionEn: "Find answers to commonly asked questions about our shipping, customs clearance, and logistics services in Dubai and the UAE.",
+    descriptionAr: "إجابات على الأسئلة الشائعة حول خدمات الشحن والتخليص الجمركي والخدمات اللوجستية في دبي والإمارات العربية المتحدة.",
+  });
 }
 
 export default function FAQPage({ params }: Props) {

@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { Metadata } from "next";
+import { generatePageMetadata } from "@/utils/metadata";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ServicesSection from "@/components/ServicesSection";
 import { Button } from "@/components/ui/button";
@@ -10,23 +11,14 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const isArabic = params.locale === 'ar';
-  
-  return {
-    title: isArabic 
-      ? "خدماتنا | نجم الين للشحن"
-      : "Our Services | Najem Aleen Shipping",
-    description: isArabic
-      ? "استكشف مجموعة خدماتنا الشاملة بما في ذلك شحن الحاويات والتخليص الجمركي وإدارة سلسلة التوريد للشركات في الإمارات العربية المتحدة"
-      : "Explore our comprehensive range of services including container shipping, customs clearance, and supply chain management for businesses across the UAE.",
-    alternates: {
-      canonical: `/${params.locale}/services`,
-      languages: {
-        'en': '/en/services',
-        'ar': '/ar/services',
-      },
-    },
-  };
+  return generatePageMetadata({
+    locale: params.locale,
+    pageName: "services",
+    titleEn: "Our Services | Najem Aleen Shipping",
+    titleAr: "خدماتنا | نجم الين للشحن",
+    descriptionEn: "Explore our comprehensive range of shipping, customs clearance, and logistics services for businesses and individuals in Dubai and the UAE.",
+    descriptionAr: "استكشف مجموعة خدماتنا الشاملة بما في ذلك الشحن والتخليص الجمركي والخدمات اللوجستية للشركات والأفراد في دبي والإمارات العربية المتحدة.",
+  });
 }
 
 export default function ServicesPage({ params }: Props) {

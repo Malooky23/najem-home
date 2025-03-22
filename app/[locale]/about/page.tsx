@@ -5,43 +5,21 @@ import { Link } from "@/i18n/routing";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Ship, Award, Users, Clock, Globe, Truck, Building, Cog } from "lucide-react";
+import { generatePageMetadata } from "@/utils/metadata";
 
 type Props = {
   params: { locale: string };
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const isArabic = params.locale === 'ar';
-  
-  const title = isArabic 
-    ? "معلومات عنا | نجم الين للشحن"
-    : "About Us | Najem Aleen Shipping";
-  
-  const description = isArabic
-    ? "تعرف على نجم الين للشحن، شركة رائدة في مجال الخدمات اللوجستية والشحن في الإمارات العربية المتحدة"
-    : "Your trusted partner for shipping, customs clearance, and logistics in Dubai with expertise since 1999 and innovation since our foundation in 2022.";
-  
-  // The root layout already includes base OpenGraph metadata, we just need to override specific fields
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: `/${params.locale}/about`,
-      languages: {
-        'en': '/en/about',
-        'ar': '/ar/about',
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: `https://najemaleen.com/${params.locale}/about`,
-    },
-    twitter: {
-      title,
-      description,
-    }
-  };
+  return generatePageMetadata({
+    locale: params.locale,
+    pageName: "about",
+    titleEn: "About Us | Najem Aleen Shipping",
+    titleAr: "معلومات عنا | نجم الين للشحن",
+    descriptionEn: "Your trusted partner for shipping, customs clearance, and logistics in Dubai with expertise since 1999 and innovation since our foundation in 2022.",
+    descriptionAr: "تعرف على نجم الين للشحن، شركة رائدة في مجال الخدمات اللوجستية والشحن في الإمارات العربية المتحدة",
+  });
 }
 
 export default function AboutPage({ params }: Props) {

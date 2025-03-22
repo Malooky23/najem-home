@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Metadata } from "next";
+import { generatePageMetadata } from "@/utils/metadata";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContactForm from "./components/ContactForm";
 import ContactInfo from "./components/ContactInfo";
@@ -10,23 +11,14 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const isArabic = params.locale === 'ar';
-
-  return {
-    title: isArabic
-      ? "اتصل بنا | نجم الين للشحن"
-      : "Contact Us | Najem Aleen Shipping",
-    description: isArabic
-      ? "تواصل مع نجم الين للشحن للحصول على خدمات لوجستية وشحن موثوقة في جميع أنحاء الإمارات العربية المتحدة. استفسر عن خدماتنا في دبي وأبوظبي والشارقة."
-      : "Get in touch with Najem Aleen Shipping for reliable logistics and shipping services throughout the UAE. Inquire about our services in Dubai, Abu Dhabi, and Sharjah.",
-    alternates: {
-      canonical: `/${params.locale}/contact`,
-      languages: {
-        'en': '/en/contact',
-        'ar': '/ar/contact',
-      },
-    },
-  };
+  return generatePageMetadata({
+    locale: params.locale,
+    pageName: "contact",
+    titleEn: "Contact Us | Najem Aleen Shipping",
+    titleAr: "اتصل بنا | نجم الين للشحن",
+    descriptionEn: "Get in touch with Najem Aleen Shipping for all your logistics, customs clearance, and shipping needs in Dubai and the UAE.",
+    descriptionAr: "تواصل مع نجم الين للشحن لجميع احتياجاتك اللوجستية والتخليص الجمركي والشحن في دبي والإمارات العربية المتحدة.",
+  });
 }
 
 export default function ContactPage({ params }: Props) {

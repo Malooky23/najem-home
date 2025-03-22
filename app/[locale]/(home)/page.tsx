@@ -10,51 +10,22 @@ import { Button } from "@/components/ui/button"
 import { Ship } from "lucide-react"
 import { Metadata } from "next"
 import HeroSection from "./components/HeroSection"
-// import HeroSection from "@/components/HeroSection"
-export async function generateMetadata({ params }: 
-  { params: { locale: string } }): Promise<Metadata> {
-  // You could potentially fetch translations specifically for SEO here
-  
-  const isArabic = params.locale === 'ar';
-  
-  return {
-    title: isArabic 
-      ? "نجم الين للشحن | خدمات لوجستية شاملة في الإمارات العربية المتحدة"
-      : "Najem Aleen Shipping | Comprehensive Logistics Services in UAE",
-    description: isArabic
-      ? "حلول خبيرة في شحن الحاويات والتخليص الجمركي للشركات في الإمارات العربية المتحدة بما في ذلك دبي، أبوظبي، والشارقة"
-      : "Expert container shipping, freight forwarding, and customs clearance solutions for businesses across all emirates of the UAE including Dubai, Abu Dhabi, and Sharjah",
-    alternates: {
-      canonical: `/${params.locale}`,
-      languages: {
-        'en': '/en',
-        'ar': '/ar',
-      },
-    },
-    openGraph: {
-      locale: params.locale === 'ar' ? 'ar_AE' : 'en_US',
-    }
-  }
+import { generatePageMetadata } from "@/utils/metadata"
+
+type Props = {
+  params: { locale: string };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return generatePageMetadata({
+    locale: params.locale,
+    pageName: "",
+    titleEn: "Najem Aleen Shipping | Customs Clearance & Logistics Services",
+    titleAr: "نجم الين للشحن | خدمات التخليص الجمركي والخدمات اللوجستية",
+    descriptionEn: "Providing expert customs clearance, freight forwarding, and logistics solutions in Dubai and across the UAE since 2022.",
+    descriptionAr: "تقديم خدمات متخصصة في التخليص الجمركي والشحن والخدمات اللوجستية في دبي وجميع أنحاء الإمارات العربية المتحدة منذ عام 2022.",
+  });
 }
-
-// export default function Home() {
-//   const t = useTranslations("Index");
-
-//   return (
-//     <div className="flex flex-col min-h-screen">
-//       {/* <Header /> */}
-      
-//       <main className="flex-1">
-//         <HeroSection />
-//         <ServicesSection />
-//         <ContactSection />
-//         <FAQSection />
-//       </main>
-      
-//       {/* <Footer /> */}
-//     </div>
-//   );
-// }
 
 export default function Home() {
   const t = useTranslations("Index");

@@ -1,29 +1,21 @@
 import ServiceContent from "../../components/ServiceContent";
 import ServiceSchema from "../../components/ServiceSchema";
 import { Metadata } from "next";
+import { generatePageMetadata } from "@/utils/metadata";
 
 type Props = {
   params: { locale: string };
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const isArabic = params.locale === 'ar';
-  
-  return {
-    title: isArabic 
-      ? "خدمات الشحن | نجم الين للشحن"
-      : "Freight Forwarding | Najem Aleen Shipping",
-    description: isArabic
-      ? "خدمات خبيرة في تجميع وإدارة الشحنات للاستيراد والتصدير في جميع إمارات الإمارات العربية المتحدة"
-      : "Expert consolidation services for import/export throughout all emirates in the UAE, ensuring efficient handling of your cargo with complete management of logistics operations.",
-    alternates: {
-      canonical: `/${params.locale}/services/freight-forwarding`,
-      languages: {
-        'en': '/en/services/freight-forwarding',
-        'ar': '/ar/services/freight-forwarding',
-      },
-    },
-  };
+  return generatePageMetadata({
+    locale: params.locale,
+    pageName: "services/freight-forwarding",
+    titleEn: "Freight Forwarding Services | Najem Aleen Shipping",
+    titleAr: "خدمات الشحن والنقل | نجم الين للشحن",
+    descriptionEn: "Efficient freight forwarding solutions for air, sea, and land transportation. Let us handle your cargo with expertise and care.",
+    descriptionAr: "حلول فعالة للشحن والنقل الجوي والبحري والبري. دعنا نتعامل مع شحنتك بخبرة واهتمام.",
+  });
 }
 
 export default function FreightForwardingPage({ params }: Props) {
