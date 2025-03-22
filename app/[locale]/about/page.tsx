@@ -13,13 +13,18 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isArabic = params.locale === 'ar';
   
+  const title = isArabic 
+    ? "معلومات عنا | نجم الين للشحن"
+    : "About Us | Najem Aleen Shipping";
+  
+  const description = isArabic
+    ? "تعرف على نجم الين للشحن، شركة رائدة في مجال الخدمات اللوجستية والشحن في الإمارات العربية المتحدة"
+    : "Your trusted partner for shipping, customs clearance, and logistics in Dubai with expertise since 1999 and innovation since our foundation in 2022.";
+  
+  // The root layout already includes base OpenGraph metadata, we just need to override specific fields
   return {
-    title: isArabic 
-      ? "معلومات عنا | نجم الين للشحن"
-      : "About Us | Najem Aleen Shipping",
-    description: isArabic
-      ? "تعرف على نجم الين للشحن، شركة رائدة في مجال الخدمات اللوجستية والشحن في الإمارات العربية المتحدة"
-      : "Your trusted partner for shipping, customs clearance, and logistics in Dubai with expertise since 1999 and innovation since our foundation in 2022.",
+    title,
+    description,
     alternates: {
       canonical: `/${params.locale}/about`,
       languages: {
@@ -27,6 +32,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'ar': '/ar/about',
       },
     },
+    openGraph: {
+      title,
+      description,
+      url: `https://najemaleen.com/${params.locale}/about`,
+    },
+    twitter: {
+      title,
+      description,
+    }
   };
 }
 
@@ -35,7 +49,6 @@ export default function AboutPage({ params }: Props) {
 
   return (
     <>
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-background via-background/95 to-background/90 overflow-hidden">
         <div className="container pt-4 pb-12 md:py-16">
           <Breadcrumbs 
@@ -80,7 +93,7 @@ export default function AboutPage({ params }: Props) {
                 alt="Najem Aleen Shipping Operations" 
                 fill 
                 className="object-cover"
-                priority
+                priority 
               />
             </div>
           </div>
