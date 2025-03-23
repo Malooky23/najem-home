@@ -151,6 +151,26 @@
      <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/warehousing-solutions" />
    </url>
 
+   <!-- Shipping to Syria English -->
+   <url>
+     <loc>https://www.najemaleen.com/en/services/shipping-to-syria</loc>
+     <lastmod>2025-03-20</lastmod>
+     <changefreq>weekly</changefreq>
+     <priority>0.8</priority>
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/shipping-to-syria" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/shipping-to-syria" />
+   </url>
+
+   <!-- Shipping to Syria Arabic -->
+   <url>
+     <loc>https://www.najemaleen.com/ar/services/shipping-to-syria</loc>
+     <lastmod>2025-03-20</lastmod>
+     <changefreq>weekly</changefreq>
+     <priority>0.8</priority>
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/shipping-to-syria" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/shipping-to-syria" />
+   </url>
+
   <!-- About English -->
   <url>
     <loc>https://www.najemaleen.com/en/about</loc>
