@@ -36,6 +36,14 @@ export function generatePageMetadata({
       title,
       description,
       url: `https://www.najemaleen.com/${locale}/${pageName}`,
+      images: [
+        {
+          url: '/op-logo.jpg', // Create this image (1200x630px ideal size)
+          width: 1200,
+          height: 630,
+          alt: 'Najem Aleen Shipping',
+        }
+      ],
     },
     twitter: {
       title,
