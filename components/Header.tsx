@@ -77,7 +77,7 @@ export default function Header() {
                   >
                     {t(item.label)}
                     <svg
-                      className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180"
+                      className="mx-1 h-4 w-4 transition-transform group-hover:rotate-180"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"

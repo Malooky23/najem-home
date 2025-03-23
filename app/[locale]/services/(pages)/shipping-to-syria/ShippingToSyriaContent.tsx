@@ -1,28 +1,38 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Link, redirect } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Phone, Mail, ChevronLeft } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { WhatsApp } from "@/components/Icons";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-interface ServiceContentProps {
-  serviceKey: string;
+interface ShippingToSyriaContentProps {
   imagePath: string;
   locale: string;
   children?: React.ReactNode;
-  className?: string;
 }
 
-export default function ServiceContent({
-  serviceKey,
+export default function ShippingToSyriaContent({
   imagePath,
   locale,
   children,
-  className,
-}: ServiceContentProps) {
-  const t = useTranslations(`Services.${serviceKey}`);
+}: ShippingToSyriaContentProps) {
+  const t = useTranslations("ShippingToSyria");
   const commonT = useTranslations("Services.common");
+
+  const whyChooseUsUsps = t.raw("whyChooseUs.usps");
+  const servicesOfferedServices = t.raw("servicesOffered.services");
+  const regulationsBulletPoints = t.raw("syriaSpecificInfo.regulations.bulletPoints");
+  const prohibitedItemsBulletPoints = t.raw("syriaSpecificInfo.prohibitedItems.bulletPoints");
+  const challengesBulletPoints = t.raw("syriaSpecificInfo.challenges.bulletPoints");
+  const faqQuestions = t.raw("faq.questions");
+
 
   return (
     <>
@@ -33,7 +43,7 @@ export default function ServiceContent({
           <div className="absolute inset-0 z-0">
             <Image
               src={imagePath}
-              alt={t("title")}
+              alt={t("hero.title")}
               fill
               className="object-cover opacity-10 mix-blend-overlay"
               priority
@@ -46,21 +56,17 @@ export default function ServiceContent({
             <Breadcrumbs
               items={[
                 { label: commonT("services"), href: "/services" },
-                { label: t("title") }
+                { label: t("hero.title") },
               ]}
               className="mb-4 md:mb-6"
             />
 
             <div className="max-w-3xl">
-              <div className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm text-primary mb-3">
-                {t("Title")}
-              </div>
-              {/* Use the new global utility class */}
               <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl gradient-heading">
-                {t("title")}
+                {t("hero.title")}
               </h1>
               <p className="mt-4 text-xl text-muted-foreground">
-                {t("heroDescription")}
+                {t("hero.subheading")}
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <Button asChild size="lg" className="rounded-full">
@@ -85,51 +91,101 @@ export default function ServiceContent({
             <div className="lg:col-span-8">
               {/* Service Description */}
               <div className="prose prose-lg max-w-none dark:prose-invert">
-                <h2 className="text-3xl font-bold tracking-tight text-primary">{t("descriptionTitle")}</h2>
-                <p className="text-muted-foreground">{t("fullDescription")}</p>
+                <h2 className="text-3xl font-bold tracking-tight text-primary">{t("introduction.title")}</h2>
+                <p className="text-muted-foreground">{t("introduction.paragraph1")}</p>
+                <p className="text-muted-foreground">{t("introduction.paragraph2")}</p>
 
-                {/* Key Features */}
-                <h2 className="text-3xl font-bold tracking-tight text-primary mt-12">{t("featuresTitle")}</h2>
+                {/* Why Choose Us */}
+                <h2 className="text-3xl font-bold tracking-tight text-primary mt-12">{t("whyChooseUs.title")}</h2>
                 <div className="mt-8 grid gap-6 md:grid-cols-2">
-                  {Array.from({ length: 5 }).map((_, i) => {
-                    const featureKey = `feature${i + 1}`;
-                    const featureText = t(featureKey, { fallback: "" });
-                    if (!featureText) return null;
-                    return (
-                      <div key={featureKey} className="flex items-start">
-                        <div className="flex-shrink-0 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
-                         {locale === "en" ? <ChevronRight className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
-                        </div>
-                        <div className="mx-4 my-auto">
-                          <p className="text-base font-medium">{featureText}</p>
-                        </div>
+                  {Array.isArray(whyChooseUsUsps) && whyChooseUsUsps.map((usp: any, i: number) => (
+                    <div key={`usp-${i}`} className="flex items-start">
+                      <div className="flex-shrink-0 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+                       {locale === "en" ? <ChevronRight className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
                       </div>
-                    );
-                  })}
+                      <div className="mx-4">
+                        <p className="text-base font-medium">{usp.heading}</p>
+                        <p className="text-muted-foreground text-sm">{usp.paragraph}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
 
-                {/* Process */}
-                <h2 className="text-3xl font-bold tracking-tight text-primary mt-12">{t("processTitle")}</h2>
-                <p className="text-muted-foreground">{t("processDescription")}</p>
-                <div className="mt-8 space-y-6">
-                  {Array.from({ length: 5 }).map((_, i) => {
-                    const stepKey = `step${i + 1}`;
-                    const stepText = t(stepKey, { fallback: "" });
-                    if (!stepText) return null;
-                    return (
-                      <div key={stepKey} className="flex">
-                        <div className="flex-shrink-0 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary border border-primary/20">
-                          <span className="font-bold">{i + 1}</span>
-                        </div>
-                        <div className="mx-4 my-auto">
-                          <p className="text-base items-center font-medium">{stepText}</p>
-                        </div>
+                {/* Services Offered */}
+                <h2 className="text-3xl font-bold tracking-tight text-primary mt-12">{t("servicesOffered.title")}</h2>
+                <div className="mt-8 grid gap-6 md:grid-cols-2">
+                  {Array.isArray(servicesOfferedServices) && servicesOfferedServices.map((service: any, i: number) => (
+                    <div key={`service-${i}`} className="flex items-start">
+                      <div className="flex-shrink-0 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        {locale === "en" ? <ChevronRight className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
                       </div>
-                    );
-                  })}
+                      <div className="mx-4">
+                        <p className="text-base font-medium">{service.heading}</p>
+                        <p className="text-muted-foreground text-sm">{service.paragraph}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
 
-                {/* Additional Content */}
+                {/* Syria-Specific Information */}
+                <h2 className="text-3xl font-bold tracking-tight text-primary mt-12">{t("syriaSpecificInfo.title")}</h2>
+                <h3 className="text-2xl font-bold tracking-tight mt-8">{t("syriaSpecificInfo.regulations.title")}</h3>
+                <p className="text-muted-foreground">{t("syriaSpecificInfo.regulations.paragraph")}</p>
+                <ul className="list-disc list-inside mt-4 space-y-2">
+                  {Array.isArray(regulationsBulletPoints) && regulationsBulletPoints.map(
+                    (point: string, i: number) => (
+                      <li key={`regulation-${i}`} className="text-muted-foreground">
+                        {point}
+                      </li>
+                    )
+                  )}
+                </ul>
+
+                <h3 className="text-2xl font-bold tracking-tight mt-8">{t("syriaSpecificInfo.prohibitedItems.title")}</h3>
+                <p className="text-muted-foreground">{t("syriaSpecificInfo.prohibitedItems.paragraph")}</p>
+                <ul className="list-disc list-inside mt-4 space-y-2">
+                  {Array.isArray(prohibitedItemsBulletPoints) && prohibitedItemsBulletPoints.map(
+                    (item: string, i: number) => (
+                      <li key={`prohibited-${i}`} className="text-muted-foreground">
+                        {item}
+                      </li>
+                    )
+                  )}
+                </ul>
+
+                <h3 className="text-2xl font-bold tracking-tight mt-8">{t("syriaSpecificInfo.shippingRoutes.title")}</h3>
+                <p className="text-muted-foreground">{t("syriaSpecificInfo.shippingRoutes.paragraph")}</p>
+                <p className="text-muted-foreground">{t("syriaSpecificInfo.shippingRoutes.example")}</p>
+
+                <h3 className="text-2xl font-bold tracking-tight mt-8">{t("syriaSpecificInfo.challenges.title")}</h3>
+                <p className="text-muted-foreground">{t("syriaSpecificInfo.challenges.paragraph")}</p>
+                <ul className="list-disc list-inside mt-4 space-y-2">
+                  {Array.isArray(challengesBulletPoints) && challengesBulletPoints.map(
+                    (point: string, i: number) => (
+                      <li key={`challenge-${i}`} className="text-muted-foreground">
+                        {point}
+                      </li>
+                    )
+                  )}
+                </ul>
+
+                {/* FAQ Section */}
+                <h2 className="text-3xl font-bold tracking-tight text-primary mt-12">{t("faq.title")}</h2>
+                <div className="mt-8">
+                  <Accordion type="single" collapsible className="w-full">
+                    {Array.isArray(faqQuestions) && faqQuestions.map((qa: any, i: number) => (
+                      <AccordionItem key={`faq-${i}`} value={`item-${i}`} className="border-b border-muted">
+                        <AccordionTrigger className="text-lg font-medium py-4 hover:text-primary transition-colors">
+                          {qa.question}
+                        </AccordionTrigger>
+                        <AccordionContent className="text-muted-foreground pb-4">
+                          {qa.answer}
+                        </AccordionContent>
+                      </AccordionItem>
+                    ))}
+                  </Accordion>
+                </div>
+
                 {children}
               </div>
 
@@ -164,10 +220,10 @@ export default function ServiceContent({
                   </p>
                   <div className="mt-6 space-y-4">
                     <Link href="https://wa.me/971549968485" className="flex items-center bg-gradient-to-br from-green-50 to-green-100 hover:from-green-100 hover:to-green-300 p-3 rounded-md transition-all duration-300 shadow-sm" >
-                        <WhatsApp className="h-5 w-5 text-green-400 mx-3" />
-                        <p>
-                          <strong className="text-foreground">{commonT("WhatsApp")}:</strong> <span dir="ltr">+971 54 996 8485</span>
-                        </p>
+                      <WhatsApp className="h-5 w-5 text-green-400 mx-3" />
+                      <p>
+                        <strong className="text-foreground">{commonT("WhatsApp")}:</strong> <span dir="ltr">+971 54 996 8485</span>
+                      </p>
                     </Link>
                     <Link href="tel:+971042579791" className="bg-gradient-to-br from-blue-50 to-blue-100/50 hover:from-blue-100/50 hover:to-blue-300/50 flex items-center p-3 rounded-md transition-all duration-300 shadow-sm" >
                       <Phone className="h-5 w-5 text-primary mx-3" />
@@ -187,7 +243,25 @@ export default function ServiceContent({
                   </Button>
                 </div>
 
-                {/* Related Services */}
+                {/* Related Services
+                <div className="rounded-xl border border-primary/10 bg-card p-6 shadow-sm">
+                  <h3 className="text-xl font-bold text-primary">{commonT("relatedServicesTitle")}</h3>
+                  <ul className="mt-6 space-y-4">
+                    <li className="flex items-center group">
+                      {locale === "en" ? <ChevronRight className="mx-2 h-4 w-4 text-primary transition-transform group-hover:translate-x-1" /> : <ChevronLeft className="mx-2 h-4 w-4 text-primary transition-transform group-hover:translate-x-1" />}
+
+                      <Link
+                        href="/services"
+                        className="text-foreground hover:text-primary hover:underline transition-colors"
+                      >
+                        {commonT("allServices")}
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> */}
+
                 <div className="rounded-xl border border-primary/10 bg-card p-6 shadow-sm">
                   <h3 className="text-xl font-bold text-primary">{commonT("relatedServicesTitle")}</h3>
                   <ul className="mt-6 space-y-4">
@@ -199,7 +273,6 @@ export default function ServiceContent({
                       return (
                         <li key={relatedKey} className="flex items-center group">
                           {locale === "en" ? <ChevronRight className="mx-2 h-4 w-4 text-primary transition-transform group-hover:translate-x-1" /> : <ChevronLeft className="mx-2 h-4 w-4 text-primary transition-transform group-hover:translate-x-1" />}
-
                           <Link
                             href={relatedLink}
                             className="text-foreground hover:text-primary hover:underline transition-colors"
@@ -213,6 +286,8 @@ export default function ServiceContent({
                 </div>
               </div>
             </div>
+
+
 
             {/* Mobile-only sidebar */}
             <div className="lg:hidden space-y-6">
@@ -251,24 +326,16 @@ export default function ServiceContent({
               <div className="rounded-xl border border-primary/10 bg-card p-6 shadow-sm">
                 <h3 className="text-xl font-bold text-primary">{commonT("relatedServicesTitle")}</h3>
                 <ul className="mt-6 space-y-4">
-                  {Array.from({ length: 3 }).map((_, i) => {
-                    const relatedKey = `related${i + 1}`;
-                    const relatedText = t(relatedKey, { fallback: "" });
-                    const relatedLink = t(`related${i + 1}Link`, { fallback: "" });
-                    if (!relatedText || !relatedLink) return null;
-                    return (
-                      <li key={relatedKey} className="flex items-center group">
-                        {locale === "en" ? <ChevronRight className="mx-2 h-4 w-4 text-primary transition-transform group-hover:translate-x-1" /> : <ChevronLeft className="mx-2 h-4 w-4 text-primary transition-transform group-hover:translate-x-1" />}
+                  <li className="flex items-center group">
+                    {locale === "en" ? <ChevronRight className="mx-2 h-4 w-4 text-primary transition-transform group-hover:translate-x-1" /> : <ChevronLeft className="mx-2 h-4 w-4 text-primary transition-transform group-hover:translate-x-1" />}
 
-                        <Link
-                          href={relatedLink}
-                          className="text-foreground hover:text-primary hover:underline transition-colors"
-                        >
-                          {relatedText}
-                        </Link>
-                      </li>
-                    );
-                  })}
+                    <Link
+                      href="/services"
+                      className="text-foreground hover:text-primary hover:underline transition-colors"
+                    >
+                      {commonT("allServices")}
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

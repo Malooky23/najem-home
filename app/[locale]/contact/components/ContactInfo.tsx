@@ -74,7 +74,7 @@ export default function ContactInfo() {
             <div className={`flex-shrink-0 p-3 rounded-full ${method.bgColor}`}>
               <method.icon className={`h-6 w-6 ${method.color}`} />
             </div>
-            <div className="ml-4 flex-1">
+            <div className="mx-4 flex-1">
               <h3 className="font-medium">{method.title}</h3>
               {/* Force LTR direction for phone numbers, email addresses */}
               <p className="text-muted-foreground" dir={method.icon === Phone || method.icon === WhatsApp ? "ltr" : "auto"}>
@@ -100,7 +100,7 @@ export default function ContactInfo() {
         <div className="space-y-4">
           <div className="flex items-start">
             <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-            <div className="ml-3 flex-1">
+            <div className="mx-3 flex-1">
               <div className="flex items-center justify-between">
                 <h3 className="font-medium">{t("address")}</h3>
                 <Button
@@ -124,7 +124,7 @@ export default function ContactInfo() {
           
           <div className="flex items-start">
             <Building2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-            <div className="ml-3">
+            <div className="mx-3">
               <h3 className="font-medium">{t("office")}</h3>
               <p className="text-muted-foreground">
                 {t("officeDetails")}
@@ -135,7 +135,7 @@ export default function ContactInfo() {
           {/* Regular business hours - always show these */}
           <div className="flex items-start">
             <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-            <div className="ml-3">
+            <div className="mx-3">
               <h3 className="font-medium">{t("hours")}</h3>
               <p className="text-muted-foreground whitespace-pre-line">
                 {businessT("regular.hours")}
@@ -147,7 +147,7 @@ export default function ContactInfo() {
           {currentPeriod !== 'regular' && (
             <div className="flex items-start border-t border-dashed border-muted pt-4 mt-4">
               <CalendarRange className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-              <div className="ml-3">
+              <div className="mx-3">
                 <h3 className="font-medium text-amber-600">
                   {currentPeriod === 'short-holiday' && shortHolidayInfo 
                     ? businessT("shortHoliday.title") 
@@ -171,7 +171,7 @@ export default function ContactInfo() {
               ) : (
                 <CalendarClock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
               )}
-              <div className="ml-3">
+              <div className="mx-3">
                 <h3 className="font-medium text-amber-600">
                   {businessT("notice.title")}
                 </h3>

@@ -54,7 +54,7 @@ export default function MobileNav({
     <>
       {/* Mobile menu button */}
       <button 
-        className="md:hidden p-2 -mr-2 text-muted-foreground" 
+        className="md:hidden p-2 -mx-2 text-muted-foreground" 
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
       >
@@ -87,7 +87,7 @@ export default function MobileNav({
                     </button>
                     
                     {servicesDropdownOpen && item.dropdownItems && (
-                      <div className="ml-4 mt-2 space-y-2 border-l border-border pl-4">
+                      <div className="mx-4 mt-2 space-y-2 border-l border-border pl-4">
                         {item.dropdownItems.map((dropdownItem) => (
                           <Link
                             key={dropdownItem.label}

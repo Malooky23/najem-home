@@ -39,7 +39,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
           {isRTL ? (
             <>
               {/* Arabic (RTL) - Chevron left, text right */}
-              <div className="flex-shrink-0 ml-0 mr-3">
+              <div className="flex-shrink-0 mx-0 mx-3">
                 {isExpanded ? (
                   <ChevronUp className="h-5 w-5 text-primary" />
                 ) : (
@@ -56,7 +56,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
               <h3 className="flex-grow text-left font-semibold text-lg">
                 {question}
               </h3>
-              <div className="flex-shrink-0 ml-3">
+              <div className="flex-shrink-0 mx-3">
                 {isExpanded ? (
                   <ChevronUp className="h-5 w-5 text-primary" />
                 ) : (

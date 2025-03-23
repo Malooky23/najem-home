@@ -80,6 +80,7 @@
       "contactButton": "Contact Us",
       "phone": "Phone",
       "email": "Email",
+      "WhatsApp": "WhatsApp",
       "ctaTitle": "Ready to Get Started?",
       "ctaDescription": "Contact our team today to discuss your specific shipping needs and get a customized solution.",
       "ctaButton": "Request a Quote",
@@ -107,8 +108,8 @@
       "step3": "Professional loading and securing of cargo",
       "step4": "Documentation preparation and customs clearance",
       "step5": "Final delivery to the designated destination",
-      "related1": "Customs Clearance Services",
-      "related1Link": "/services/customs-clearance",
+      "related1": "Shipping to Syria",
+      "related1Link": "/services/shipping-to-syria",
       "related2": "Freight Forwarding",
       "related2Link": "/services/freight-forwarding",
       "related3": "Warehousing Solutions",
@@ -136,8 +137,8 @@
       "step5": "Continuous monitoring and status updates throughout transit",
       "related1": "Container Shipping",
       "related1Link": "/services/container-shipping",
-      "related2": "Customs Clearance",
-      "related2Link": "/services/customs-clearance",
+      "related2": "Shipping to Syria",
+      "related2Link": "/services/shipping-to-syria",
       "related3": "Logistics Consultation",
       "related3Link": "/services/logistics-consultation"
     },
@@ -161,12 +162,14 @@
       "step3": "Submission of documents to customs authorities",
       "step4": "Resolution of any customs inquiries or inspections",
       "step5": "Release of goods and coordination with transportation",
-      "related1": "Container Shipping",
-      "related1Link": "/services/container-shipping",
+      "related1": "Shipping to Syria",
+      "related1Link": "/services/shipping-to-syria",
       "related2": "Freight Forwarding",
       "related2Link": "/services/freight-forwarding",
       "related3": "Car Transportation",
-      "related3Link": "/services/car-transportation"
+      "related3Link": "/services/car-transportation",
+      "related4": "Packaging & Repackaging",
+      "related4Link": "/services/packaging-repackaging"
     },
     "carTransportation": {
       "Title": "Car Transportation Services",
@@ -192,8 +195,8 @@
       "related1Link": "/services/customs-clearance",
       "related2": "Freight Forwarding",
       "related2Link": "/services/freight-forwarding",
-      "related3": "Logistics Consultation",
-      "related3Link": "/services/logistics-consultation"
+      "related3": "Shipping to Syria",
+      "related3Link": "/services/shipping-to-syria"
     },
     "packagingRepackaging": {
       "Title": "Packaging & Repackaging Services",
@@ -275,6 +278,12 @@
       "related2Link": "/services/customs-clearance",
       "related3": "Warehousing Solutions",
       "related3Link": "/services/warehousing-solutions"
+    },
+    "shippingToSyria": {
+      "title": "Comprehensive Shipping Services to Syria from the UAE",
+      "Title": "Shipping to Syria",
+      "Description": "Reliable shipping services to Syria from the UAE, including expert customs clearance, secure transport, and competitive rates.",
+      "fullDescription": "Najem Aleen Shipping provides comprehensive logistics and shipping services for transporting goods from the UAE to Syria. We specialize in navigating the complexities of Syrian import regulations and customs procedures, offering expert customs clearance services to ensure smooth and compliant delivery. Our services include container shipping (FCL and LCL), freight forwarding (air and sea), and secure transportation options. We provide competitive pricing, real-time shipment tracking, and dedicated customer support for a seamless experience. Whether you need to ship commercial goods, personal belongings, or vehicles, we have a solution tailored to your needs. Contact us for a free quote and let us handle your shipping to Syria from Dubai, Abu Dhabi, Sharjah, or anywhere in the UAE."
     }
   },
   "About": {
@@ -490,5 +499,163 @@
       "hours": "Our office will be closed on this day.\nWe will resume normal operations the following day.",
       "notice": "For urgent matters, please contact our emergency number: +971 54 996 8487"
     }
+  },
+  "ShippingToSyria": {
+    "hero": {
+      "title": "Comprehensive Shipping Services to Syria from the UAE",
+      "subheading": "Reliable, Secure, and Efficient Logistics Solutions for Your Shipments to Syria"
+    },
+    "introduction": {
+      "title": "Your Trusted Partner for Shipping to Syria",
+      "paragraph1": "Looking for a reliable and experienced shipping company to transport your goods from the UAE to Syria? Najem Aleen Shipping provides comprehensive logistics solutions, including container shipping, freight forwarding, and expert customs clearance, ensuring your shipments arrive safely and on time. We understand the complexities of shipping to Syria and are committed to providing a seamless and transparent service.",
+      "paragraph2": "Navigate Syrian customs and logistics with confidence. Partner with Najem Aleen."
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Najem Aleen for Your Syria Shipments?",
+      "usps": [
+        {
+          "heading": "Expertise in Syrian Customs Regulations",
+          "paragraph": "Navigating Syrian customs can be challenging. Our team has extensive experience with Syrian import regulations and documentation requirements, ensuring smooth and compliant customs clearance for your shipments."
+        },
+        {
+          "heading": "Reliable Network & Partnerships",
+          "paragraph": "We have established strong partnerships with reliable agents and carriers in Syria, ensuring your goods are handled securely and efficiently throughout their journey."
+        },
+        {
+          "heading": "Secure Handling & Transportation",
+          "paragraph": "We prioritize the safety and security of your shipments. We utilize secure packaging, reliable transportation methods, and comprehensive tracking to provide peace of mind."
+        },
+        {
+          "heading": "Competitive Pricing & Transparent Quotes",
+          "paragraph": "We offer competitive pricing for shipping to Syria, with transparent and detailed quotes that outline all costs involved. No hidden fees."
+        },
+        {
+          "heading": "Advanced Tracking & Technology",
+          "paragraph": "Our advanced tracking system provides real-time visibility into your shipment's location and status, keeping you informed every step of the way."
+        },
+        {
+          "heading": "Dedicated Customer Support",
+          "paragraph": "Get personalized service and solutions tailored to your specific shipping requirements. We're here to answer your questions and guide you through the process."
+        }
+      ]
+    },
+    "servicesOffered": {
+      "title": "Our Shipping Services to Syria",
+      "services": [
+        {
+          "heading": "Container Shipping (FCL & LCL)",
+          "paragraph": "We offer both Full Container Load (FCL) and Less than Container Load (LCL) options for shipping goods to Syria via sea freight.  We handle all aspects of container shipping, from loading and securing to customs clearance."
+        },
+        {
+          "heading": "Freight Forwarding (Air & Sea)",
+          "paragraph": "Our freight forwarding services provide flexible and cost-effective solutions for shipping to Syria. We manage the entire process, including transportation, documentation, and customs clearance."
+        },
+        {
+          "heading": "Car Shipping",
+          "paragraph": "We provide specialized car shipping services to Syria, handling all necessary documentation and ensuring the safe and secure transport of your vehicle."
+        },
+        {
+          "heading": "Customs Clearance",
+          "paragraph": "Our expert team handles all aspects of customs clearance for shipments to Syria, ensuring compliance with all regulations and minimizing delays."
+        },
+        {
+          "heading": "Packaging & Repackaging",
+          "paragraph": "We offer professional packaging and repackaging services to ensure your goods are protected during transit to Syria."
+        },
+        {
+          "heading": "Warehousing (UAE)",
+          "paragraph": "Our secure warehousing facilities in the UAE provide convenient storage solutions for your goods before they are shipped to Syria."
+        }
+      ]
+    },
+    "syriaSpecificInfo": {
+      "title": "Navigating Shipping to Syria: Key Considerations",
+      "regulations": {
+        "title": "Syrian Import Regulations & Customs Clearance",
+        "paragraph": "Importing goods into Syria requires adherence to specific regulations and customs procedures.  Our team is well-versed in these requirements and will guide you through the entire process.",
+        "bulletPoints": [
+          "Detailed documentation is essential, including commercial invoices, packing lists, certificates of origin, and potentially other permits depending on the goods.",
+          "Accurate classification of goods is crucial for determining applicable duties and taxes.",
+          "We handle all aspects of customs clearance, including submission of documents, payment of duties, and communication with Syrian customs authorities.",
+          "We stay up-to-date on the latest changes to Syrian import regulations."
+        ]
+      },
+      "prohibitedItems": {
+        "title": "Prohibited Items",
+        "paragraph": "Certain items are prohibited from import into Syria.  It is essential to be aware of these restrictions to avoid delays or penalties.",
+        "bulletPoints": [
+          "Weapons and ammunition",
+          "Narcotics and illegal drugs",
+          "Certain types of publications",
+          "**Important:** This list is not exhaustive.  Please contact us for a complete list of prohibited items and to confirm the eligibility of your goods for import into Syria."
+        ]
+      },
+      "shippingRoutes": {
+        "title": "Shipping Routes and Transit Times",
+        "paragraph": "We utilize established shipping routes to Syria, primarily via sea freight to major ports like Latakia and Tartus.  Transit times can vary depending on the origin, shipping method, and customs clearance procedures.",
+        "example": "Typical transit times from the UAE to Syria via sea freight range from 14 to 21 days."
+      },
+      "challenges": {
+        "title": "Addressing Challenges & Ensuring Security",
+        "paragraph": "We understand the potential challenges of shipping to Syria, including security concerns and logistical complexities.  We take proactive measures to mitigate these risks, including...",
+        "bulletPoints": [
+          "Utilizing secure and reliable transportation methods.",
+          "Working with trusted partners in Syria.",
+          "Providing comprehensive insurance options.",
+          "Maintaining constant communication and providing updates throughout the shipping process."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions about Shipping to Syria",
+      "questions": [
+        {
+          "question": "What documents are required to ship goods to Syria from the UAE?",
+          "answer": "Shipping to Syria requires several key documents. These typically include a commercial invoice, a detailed packing list, a certificate of origin, and a bill of lading (for sea freight) or airway bill (for air freight). Depending on the nature of the goods, additional documents like import licenses, permits, or specific product certifications might be needed. Our team will provide you with a comprehensive checklist tailored to your specific shipment to ensure compliance with all Syrian and UAE regulations."
+        },
+        {
+          "question": "How long does it take to ship goods from the UAE to Syria?",
+          "answer": "The transit time for shipping goods from the UAE to Syria varies depending on the chosen mode of transport. Sea freight is generally the most economical option, with transit times typically ranging from 14 to 21 days to major Syrian ports like Latakia and Tartus. Air freight is significantly faster, with delivery typically taking 3-7 days, but it is also more expensive. These timeframes are estimates and can be affected by factors such as customs clearance procedures, specific routing, and unforeseen delays."
+        },
+        {
+          "question": "What are the costs associated with shipping to Syria?",
+          "answer": "Shipping costs to Syria are influenced by several factors, including the volume and weight of your shipment, the chosen mode of transport (sea or air), the origin and destination points, and any additional services required, such as insurance or specialized packaging. Customs duties and taxes imposed by Syrian authorities will also contribute to the overall cost. We provide transparent and detailed quotes, outlining all charges involved, to ensure you have a clear understanding of the total cost."
+        },
+        {
+          "question": "Can you handle customs clearance for shipments to Syria?",
+          "answer": "Yes, we specialize in providing comprehensive customs clearance services for shipments to Syria. Our experienced team is well-versed in Syrian import regulations and procedures. We handle all the necessary documentation, including the submission of required paperwork to Syrian Customs, the calculation and payment of applicable duties and taxes, and liaison with customs officials to ensure a smooth and efficient clearance process. Our goal is to minimize delays and ensure your goods comply with all applicable regulations."
+        },
+        {
+          "question": "What types of goods can I ship to Syria?",
+          "answer": "While we handle a wide range of goods, it's crucial to be aware of restrictions. Generally, you can ship commercial goods, personal effects, and vehicles, provided they comply with Syrian import regulations. However, certain items are prohibited, and others may require special permits. Contact us with details about your specific goods, and we'll advise you on their admissibility and any specific requirements."
+        },
+        {
+          "question": "Are there any restrictions on shipping to Syria?",
+          "answer": "Yes, there are restrictions on shipping to Syria, primarily due to international sanctions and Syrian import regulations. Certain goods are strictly prohibited, including weapons, ammunition, narcotics, and certain types of publications. Other items may be subject to restrictions or require special permits. We strongly recommend contacting us before shipping to Syria to ensure your goods comply with all applicable regulations and sanctions. We stay up-to-date on the latest restrictions and can provide expert guidance."
+        },
+        {
+          "question": "Do you offer insurance for shipments to Syria?",
+          "answer": "Yes, we offer comprehensive shipping insurance options to protect your goods against loss or damage during transit to Syria. We understand the importance of securing your investment, especially when shipping to regions with potential logistical challenges. We can tailor insurance coverage to your specific needs and the value of your shipment, providing you with peace of mind throughout the shipping process."
+        },
+        {
+          "question": "How can I track my shipment to Syria?",
+          "answer": "We provide a robust tracking system that allows you to monitor your shipment's progress in real-time. Once your shipment is booked, you'll receive a unique tracking number that you can use on our website to access updates on its location and estimated delivery time. Our system provides detailed information, keeping you informed throughout the shipping journey."
+        },
+        {
+          "question": "Can you ship personal belongings to Syria?",
+          "answer": "Yes, we offer services for shipping personal belongings to Syria. Whether you're relocating or sending personal items, we can help. We'll guide you through the necessary documentation, including packing lists and customs declarations, and provide advice on the best shipping methods for your needs and budget. We also offer packing and unpacking services for added convenience."
+        },
+        {
+          "question": "Do you ship to all cities in Syria?",
+          "answer": "We primarily ship to major ports and cities in Syria, including Latakia, Tartus, and Damascus.  Due to the current situation in Syria, service availability to certain areas may be limited or subject to change. We continuously monitor the situation and strive to offer the widest possible coverage. Please contact us with your specific destination requirements, and we'll advise you on the feasibility and available options."
+        }
+      ]
+    },
+    "related1": "Customs Clearance Services",
+    "related1Link": "/services/customs-clearance",
+    "related2": "Freight Forwarding Services",
+    "related2Link": "/services/freight-forwarding",
+    "related3": "Warehousing Solutions",
+    "related3Link": "/services/warehousing-solutions"
   }
 }

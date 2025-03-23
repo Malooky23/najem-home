@@ -16,7 +16,7 @@ export default function NotFound() {
         </p>
         <Link href="/">
           <Button className="inline-flex items-center">
-            <HomeIcon className="mr-2 h-4 w-4" />
+            <HomeIcon className="mx-2 h-4 w-4" />
             <span>{t("button")}</span>
           </Button>
         </Link>
