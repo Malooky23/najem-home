@@ -70,6 +70,9 @@ export async function POST(request: NextRequest) {
       }
     );
     
+    // Define logo URL
+    const logoUrl = 'https://www.najemaleen.com/op-logo.jpg';
+    
     // Create confirmation email for customer based on locale
     const customerEmailSubject = locale === 'ar' 
       ? 'شكراً للتواصل مع نجم الين للشحن' 
@@ -78,6 +81,9 @@ export async function POST(request: NextRequest) {
     const customerEmailHTML = locale === 'ar' 
       ? `
         <div dir="rtl" style="font-family: Arial, sans-serif; line-height: 1.6; direction: rtl; text-align: right;">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="${logoUrl}" alt="Najem Aleen Shipping" style="max-width: 200px; height: auto;">
+          </div>
           <h2>شكراً ${name} للتواصل معنا</h2>
           <p>لقد استلمنا رسالتك وسنقوم بالرد عليك قريباً.</p>
           <p>فيما يلي نسخة من استفسارك:</p>
@@ -95,6 +101,9 @@ export async function POST(request: NextRequest) {
       `
       : `
         <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="${logoUrl}" alt="Najem Aleen Shipping" style="max-width: 200px; height: auto;">
+          </div>
           <h2>Thank you, ${name}, for contacting us</h2>
           <p>We have received your message and will get back to you shortly.</p>
           <p>Here's a copy of your inquiry:</p>
@@ -115,6 +124,9 @@ export async function POST(request: NextRequest) {
     const adminEmailSubject = `New Contact Form Submission: ${name}`;
     const adminEmailHTML = `
       <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+        <div style="text-align: center; margin-bottom: 20px;">
+          <img src="${logoUrl}" alt="Najem Aleen Shipping" style="max-width: 200px; height: auto;">
+        </div>
         <h2>New Contact Form Submission</h2>
         <p>You have received a new message from the contact form on your website.</p>
         <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin: 20px 0;">

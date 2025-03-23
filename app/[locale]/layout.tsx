@@ -13,6 +13,8 @@ import localFont from "next/font/local";
 import "../globals.css";
 import type { Metadata } from "next";
 import metadata from "@/i18n/metadata";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 const inter = Inter({ subsets: ["latin"] });
 const cairo = Cairo({ subsets: ["arabic"] });
@@ -127,6 +129,8 @@ export default async function RootLayout({
           </PostHogProvider>
         </NextIntlClientProvider>
       </body>
+      <GoogleAnalytics gaId="AW-864070198" />
+
     </html>
   );
 }
