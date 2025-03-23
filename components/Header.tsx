@@ -35,6 +35,7 @@ export default function Header() {
         { label: "packagingRepackaging", href: "/services/packaging-repackaging", title: s("packagingRepackaging.Title") },
         { label: "warehousingSolutions", href: "/services/warehousing-solutions", title: s("warehousingSolutions.Title") },
         { label: "logisticsConsulting", href: "/services/logistics-consultation", title: s("logisticsConsulting.Title") },
+        { label: "shippingToSyria", href: "/services/shipping-to-syria", title: s("shippingToSyria.Title") },
       ],
     },
     { label: "contact", href: "/contact" },

@@ -1,6 +1,6 @@
 import type React from "react";
 import { NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getMessages } from 'next-intl/server';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -39,7 +39,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const typedLocale = locale as Locale;
+  // Check if the locale exists in metadata, otherwise default to 'en'
+  const safeLocale = Object.keys(metadata).includes(locale) ? locale : 'en';
+  const typedLocale = safeLocale as Locale;
+  
   return {
     title: metadata[typedLocale].title,
     description: metadata[typedLocale].description,
@@ -54,7 +57,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: 'website',
-      locale: locale === "ar" ? 'ar_AR' : 'en_US',
+      locale: safeLocale === "ar" ? 'ar_AR' : 'en_US',
       url: 'https://www.najemaleen.com',
       siteName: 'Najem Aleen Shipping',
       title: metadata[typedLocale].title,
@@ -94,12 +97,18 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  let messages;
+  // Check if locale is valid, redirect to default locale if not
+  const validLocales = ["en", "ar"];
+  if (!validLocales.includes(locale)) {
+    redirect('/en'); // Redirect to English as default
+  }
 
+  let messages;
   try {
     messages = await getMessages({locale});
   } catch (error) {
-    notFound();
+    // If messages can't be loaded but locale is valid, still redirect to default
+    redirect('/en');
   }
 
   return (

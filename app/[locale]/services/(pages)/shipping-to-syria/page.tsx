@@ -22,7 +22,7 @@ export default function ShippingToSyriaPage({ params }: Props) {
 
   return (
     <>
-      <ServiceSchema serviceKey="ShippingToSyria" locale={params.locale} />
+      <ServiceSchema serviceKey="shippingToSyria" locale={params.locale} />
       <ShippingToSyriaContent imagePath="/path/to/hero/image.jpg" locale={params.locale} />
     </>
   );
