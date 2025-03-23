@@ -5,8 +5,8 @@ export default function StructuredData() {
         '@context': 'https://schema.org',
         '@type': 'Organization',
         name: 'Najem Aleen Shipping',
-        url: 'https://najemaleen.com',
-        logo: 'https://najemaleen.com/najem_favicon.png',
+        url: 'https://www.najemaleen.com',
+        logo: 'https://www.najemaleen.com/najem_favicon.png',
         sameAs: [
             // Add your social media profiles here if any
         ],
@@ -50,9 +50,9 @@ export default function StructuredData() {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
         name: 'Najem Aleen Shipping',
-        image: 'https://najemaleen.com/op-logo.png',
-        '@id': 'https://najemaleen.com',
-        url: 'https://najemaleen.com',
+        image: 'https://www.najemaleen.com/op-logo.png',
+        '@id': 'https://www.najemaleen.com',
+        url: 'https://www.najemaleen.com',
         telephone: '+97142579791',
         mobilePhone: ['+971549968487'],
         email: 'sales@najemaleen.com',

@@ -18,7 +18,7 @@ export default function ServiceSchema({ serviceKey, locale }: ServiceSchemaProps
     "provider": {
       "@type": "Organization",
       "name": isArabic ? "نجم الين للشحن" : "Najem Aleen Shipping",
-      "url": "https://najemaleen.com"
+      "url": "https://www.najemaleen.com"
     },
     "serviceType": t("Title"),
     "areaServed": {

@@ -44,7 +44,7 @@ export async function generateMetadata({
     title: metadata[typedLocale].title,
     description: metadata[typedLocale].description,
     keywords: metadata[typedLocale].keywords,
-    metadataBase: new URL('https://najemaleen.com'),
+    metadataBase: new URL('https://www.najemaleen.com'),
     alternates: {
       canonical: '/',
       languages: {
@@ -55,7 +55,7 @@ export async function generateMetadata({
     openGraph: {
       type: 'website',
       locale: locale === "ar" ? 'ar_AR' : 'en_US',
-      url: 'https://najemaleen.com',
+      url: 'https://www.najemaleen.com',
       siteName: 'Najem Aleen Shipping',
       title: metadata[typedLocale].title,
       description: metadata[typedLocale].description,

@@ -3,27 +3,27 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Homepage English -->
   <url>
-    <loc>https://najemaleen.com/en</loc>
+    <loc>https://www.najemaleen.com/en</loc>
     <lastmod>2025-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en" />
   </url>
 
   <!-- Homepage Arabic -->
   <url>
-    <loc>https://najemaleen.com/ar</loc>
+    <loc>https://www.najemaleen.com/ar</loc>
     <lastmod>2025-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar" />
   </url>
 
   <!-- Root redirect to default locale -->
   <url>
-    <loc>https://najemaleen.com/</loc>
+    <loc>https://www.najemaleen.com/</loc>
     <lastmod>2025-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -33,221 +33,221 @@
 
    <!-- Container Shipping English -->
    <url>
-     <loc>https://najemaleen.com/en/services/container-shipping</loc>
+     <loc>https://www.najemaleen.com/en/services/container-shipping</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/container-shipping" />
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/container-shipping" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/container-shipping" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/container-shipping" />
    </url>
 
    <!-- Container Shipping Arabic -->
    <url>
-     <loc>https://najemaleen.com/ar/services/container-shipping</loc>
+     <loc>https://www.najemaleen.com/ar/services/container-shipping</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/container-shipping" />
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/container-shipping" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/container-shipping" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/container-shipping" />
    </url>
 
    <!-- Freight Forwarding English -->
    <url>
-     <loc>https://najemaleen.com/en/services/freight-forwarding</loc>
+     <loc>https://www.najemaleen.com/en/services/freight-forwarding</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/freight-forwarding" />
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/freight-forwarding" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/freight-forwarding" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/freight-forwarding" />
    </url>
 
    <!-- Freight Forwarding Arabic -->
    <url>
-     <loc>https://najemaleen.com/ar/services/freight-forwarding</loc>
+     <loc>https://www.najemaleen.com/ar/services/freight-forwarding</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/freight-forwarding" />
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/freight-forwarding" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/freight-forwarding" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/freight-forwarding" />
    </url>
 
    <!-- Customs Clearance English -->
    <url>
-     <loc>https://najemaleen.com/en/services/customs-clearance</loc>
+     <loc>https://www.najemaleen.com/en/services/customs-clearance</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/customs-clearance" />
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/customs-clearance" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/customs-clearance" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/customs-clearance" />
    </url>
 
    <!-- Customs Clearance Arabic -->
    <url>
-     <loc>https://najemaleen.com/ar/services/customs-clearance</loc>
+     <loc>https://www.najemaleen.com/ar/services/customs-clearance</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/customs-clearance" />
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/customs-clearance" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/customs-clearance" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/customs-clearance" />
    </url>
 
    <!-- Car Transportation English -->
    <url>
-     <loc>https://najemaleen.com/en/services/car-transportation</loc>
+     <loc>https://www.najemaleen.com/en/services/car-transportation</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/car-transportation" />
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/car-transportation" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/car-transportation" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/car-transportation" />
    </url>
 
    <!-- Car Transportation Arabic -->
    <url>
-     <loc>https://najemaleen.com/ar/services/car-transportation</loc>
+     <loc>https://www.najemaleen.com/ar/services/car-transportation</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/car-transportation" />
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/car-transportation" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/car-transportation" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/car-transportation" />
    </url>
 
    <!-- Packaging & Repackaging English -->
    <url>
-     <loc>https://najemaleen.com/en/services/packaging-repackaging</loc>
+     <loc>https://www.najemaleen.com/en/services/packaging-repackaging</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/packaging-repackaging" />
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/packaging-repackaging" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/packaging-repackaging" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/packaging-repackaging" />
    </url>
 
    <!-- Packaging & Repackaging Arabic -->
    <url>
-     <loc>https://najemaleen.com/ar/services/packaging-repackaging</loc>
+     <loc>https://www.najemaleen.com/ar/services/packaging-repackaging</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/packaging-repackaging" />
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/packaging-repackaging" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/packaging-repackaging" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/packaging-repackaging" />
    </url>
 
    <!-- Warehousing Solutions English -->
    <url>
-     <loc>https://najemaleen.com/en/services/warehousing-solutions</loc>
+     <loc>https://www.najemaleen.com/en/services/warehousing-solutions</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/warehousing-solutions" />
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/warehousing-solutions" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/warehousing-solutions" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/warehousing-solutions" />
    </url>
 
    <!-- Warehousing Solutions Arabic -->
    <url>
-     <loc>https://najemaleen.com/ar/services/warehousing-solutions</loc>
+     <loc>https://www.najemaleen.com/ar/services/warehousing-solutions</loc>
      <lastmod>2025-03-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.8</priority>
-     <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/warehousing-solutions" />
-     <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/warehousing-solutions" />
+     <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/warehousing-solutions" />
+     <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/warehousing-solutions" />
    </url>
 
   <!-- About English -->
   <url>
-    <loc>https://najemaleen.com/en/about</loc>
+    <loc>https://www.najemaleen.com/en/about</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/about" />
   </url>
 
   <!-- About Arabic -->
   <url>
-    <loc>https://najemaleen.com/ar/about</loc>
+    <loc>https://www.najemaleen.com/ar/about</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/about" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/about" />
   </url>
 
   <!-- Contact English -->
   <url>
-    <loc>https://najemaleen.com/en/contact</loc>
+    <loc>https://www.najemaleen.com/en/contact</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/contact" />
   </url>
 
   <!-- Contact Arabic -->
   <url>
-    <loc>https://najemaleen.com/ar/contact</loc>
+    <loc>https://www.najemaleen.com/ar/contact</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/contact" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/contact" />
   </url>
 
   <!-- FAQ English -->
   <url>
-    <loc>https://najemaleen.com/en/faq</loc>
+    <loc>https://www.najemaleen.com/en/faq</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/faq" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/faq" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/faq" />
   </url>
 
   <!-- FAQ Arabic -->
   <url>
-    <loc>https://najemaleen.com/ar/faq</loc>
+    <loc>https://www.najemaleen.com/ar/faq</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/faq" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/faq" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/faq" />
   </url>
 
   <!-- Services English -->
   <url>
-    <loc>https://najemaleen.com/en/services</loc>
+    <loc>https://www.najemaleen.com/en/services</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services" />
   </url>
 
   <!-- Services Arabic -->
   <url>
-    <loc>https://najemaleen.com/ar/services</loc>
+    <loc>https://www.najemaleen.com/ar/services</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services" />
   </url>
 
   <!-- Logistics Consultation English -->
   <url>
-    <loc>https://najemaleen.com/en/services/logistics-consultation</loc>
+    <loc>https://www.najemaleen.com/en/services/logistics-consultation</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/logistics-consultation" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/logistics-consultation" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/logistics-consultation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/logistics-consultation" />
   </url>
 
   <!-- Logistics Consultation Arabic -->
   <url>
-    <loc>https://najemaleen.com/ar/services/logistics-consultation</loc>
+    <loc>https://www.najemaleen.com/ar/services/logistics-consultation</loc>
     <lastmod>2025-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://najemaleen.com/en/services/logistics-consultation" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://najemaleen.com/ar/services/logistics-consultation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.najemaleen.com/en/services/logistics-consultation" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.najemaleen.com/ar/services/logistics-consultation" />
   </url>
 </urlset>

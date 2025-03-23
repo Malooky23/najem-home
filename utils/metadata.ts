@@ -35,7 +35,7 @@ export function generatePageMetadata({
     openGraph: {
       title,
       description,
-      url: `https://najemaleen.com/${locale}/${pageName}`,
+      url: `https://www.najemaleen.com/${locale}/${pageName}`,
     },
     twitter: {
       title,
