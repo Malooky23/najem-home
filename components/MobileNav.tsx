@@ -1,188 +1,3 @@
-// "use client"
-
-// import { useState } from "react"
-// import { useEffect } from "react"
-// import { usePathname } from "next/navigation"
-// import { Link } from "@/i18n/routing"
-// import { Button } from "@/components/ui/button"
-// import { X, ChevronDown, ChevronRight } from "lucide-react"
-
-// interface DropdownItem {
-//   label: string
-//   href: string
-//   title?: string
-// }
-
-// interface NavigationItem {
-//   label: string
-//   translatedLabel: string
-//   href: string
-//   isDropdown?: boolean
-//   dropdownItems?: DropdownItem[]
-// }
-
-// interface MobileNavProps {
-//   navigationItems: NavigationItem[]
-//   getQuoteLabel: string
-//   getLoginInLabel: string
-//   pathname: string
-//   currentLocale?: string
-//   isOpen: boolean
-//   setIsOpen: (isOpen: boolean) => void
-// }
-
-// export default function MobileNav({
-//   navigationItems,
-//   getQuoteLabel,
-//   getLoginInLabel,
-//   pathname,
-//   currentLocale = "en",
-//   isOpen,
-//   setIsOpen,
-// }: MobileNavProps) {
-//   const [ servicesDropdownOpen, setServicesDropdownOpen ] = useState(false)
-//   const clientPathname = usePathname() // Get the pathname directly
-
-//   // Prevent scrolling when menu is open
-//   useEffect(() => {
-//     // Store original body styles
-//     const originalOverflow = window.getComputedStyle(document.body).overflow;
-//     const originalPaddingRight = window.getComputedStyle(document.body).paddingRight;
-    
-//     if (isOpen) {
-//       // Get the scrollbar width to prevent layout shift
-//       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-      
-//       // Apply styles to prevent scrolling
-//       document.body.style.overflow = "hidden";
-      
-//       // Add padding right to prevent content shift when scrollbar disappears
-//       if (scrollbarWidth > 0) {
-//         document.body.style.paddingRight = `${scrollbarWidth}px`;
-//       }
-//     } else {
-//       // Restore original styles
-//       document.body.style.overflow = originalOverflow;
-//       document.body.style.paddingRight = originalPaddingRight;
-//     }
-
-//     // Cleanup function to ensure styles are restored
-//     return () => {
-//       document.body.style.overflow = originalOverflow;
-//       document.body.style.paddingRight = originalPaddingRight;
-//     }
-//   }, [isOpen]);
-
-//   const isActive = (href: string) => {
-//     // Use the client-side pathname
-//     if (!clientPathname) return false
-
-//     // Special case for home page
-//     if (href === "/") {
-//       return clientPathname === "/" || clientPathname === `/${currentLocale}`
-//     }
-
-//     // For other pages
-//     return clientPathname.includes(href)
-//   }
-
-//   return (
-//     <>
-//       {/* Full-screen Mobile Navigation with animation */}
-//       <div
-//         className={`fixed inset-0 z-[100] md:hidden transition-all duration-300 ease-in-out ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-//           }`}
-//       >
-//         <div
-//           className={`fixed inset-0 h-[100vh] w-[100vw] flex flex-col bg-background transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
-//             }`}
-//         >
-//           {/* Header with close button */}
-//           <div className="flex items-center justify-between p-4 border-b">
-//             <span className="text-lg font-medium"></span>
-//             <button
-//               onClick={() => setIsOpen(false)}
-//               aria-label="Close menu"
-//               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
-//             >
-//               <X className="h-6 w-6" />
-//             </button>
-//           </div>
-
-//           {/* Navigation content - making sure this is explicitly scrollable */}
-//           <div className="flex-1 overflow-y-auto py-6 px-6 overscroll-contain">
-//             <nav className="flex flex-col space-y-6">
-//               {navigationItems.map((item) => (
-//                 <div key={item.label}>
-//                   {item.isDropdown ? (
-//                     // Dropdown for mobile
-//                     <div>
-//                       <button
-//                         className={`flex items-center justify-between w-full py-2 text-lg ${isActive(item.href) ? "text-primary font-bold" : "font-bold text-foreground"
-//                           }`}
-//                         onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-//                         aria-expanded={servicesDropdownOpen}
-//                       >
-//                         {item.translatedLabel}
-//                         <ChevronDown
-//                           className={`h-5 w-5 transition-transform duration-200 ${servicesDropdownOpen ? "rotate-180" : ""
-//                             }`}
-//                         />
-//                       </button>
-
-//                       <div
-//                         className={`mt-2 space-y-2 border-l-2 border-border pl-4 overflow-hidden transition-all duration-300 ${servicesDropdownOpen ? " opacity-100" : "max-h-0 opacity-0"
-//                           }`}
-//                       >
-//                         {item.dropdownItems?.map((dropdownItem) => (
-//                           <Link
-//                             key={dropdownItem.label}
-//                             href={dropdownItem.href}
-//                             className={`flex  items-center py-3 text-base group ${isActive(dropdownItem.href) ? "text-primary font-medium" : "text-muted-foreground"
-//                               }`}
-//                             onClick={() => setIsOpen(false)}
-//                           >
-//                             <ChevronRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" />
-//                             {dropdownItem.title}
-//                           </Link>
-//                         ))}
-//                       </div>
-//                     </div>
-//                   ) : (
-//                     // Regular nav link for mobile
-//                     <Link
-//                       href={item.href}
-//                       className={`block py-2 text-lg font-bold transition-colors hover:text-primary ${isActive(item.href) ? "text-primary font-bold " : "text-foreground"
-//                         }`}
-//                       onClick={() => setIsOpen(false)}
-//                     >
-//                       {item.translatedLabel}
-//                     </Link>
-//                   )}
-//                 </div>
-//               ))}
-//             </nav>
-//           </div>
-
-//           {/* Action buttons at the bottom */}
-//           <div className="p-6 border-t space-y-4">
-//             <Link href="/contact" className="block">
-//               <Button className="w-full h-12 text-base bg-secondary hover:bg-secondary/80 transition-colors">
-//                 {getQuoteLabel}
-//               </Button>
-//             </Link>
-//             <Link href="https://app.najemaleen.com/" className="block">
-//               <Button className="w-full h-12 text-base bg-primary hover:bg-primary/80 transition-colors">
-//                 {getLoginInLabel}
-//               </Button>
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   )
-// }
-
 "use client"
 
 import { useState, useEffect } from "react"
@@ -259,11 +74,11 @@ export default function MobileNav({
   return (
     <>
       <div
-        className={`fixed inset-0 z-[100] md:hidden transition-all duration-300 ease-in-out ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-[90vh] md:hidden transition-all duration-300 ease-in-out ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
       >
         <div
-          className={`fixed inset-0 h-[100vh] w-[100vw] flex flex-col bg-background transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+          className={`fixed inset-0 h-[90vh] w-[100vw] flex flex-col bg-slate-100/95 shadow-lg backdrop-blur-lg transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
             }`}
         >
           <div className="flex items-center justify-between p-4 border-b border-border">
@@ -330,12 +145,12 @@ export default function MobileNav({
           </div>
 
           <div className="p-6 border-t border-border space-y-4">
-            <Link href="/contact" className="block">
+            <Link href="/contact" className="block" onClick={() => setIsOpen(false)}>
               <Button className="w-full h-12 text-base bg-orange-500 hover:bg-orange-600 transition-colors">
                 {getQuoteLabel}
               </Button>
             </Link>
-            <Link href="https://app.najemaleen.com/" className="block">
+            <Link href="https://app.najemaleen.com/" className="block" onClick={() => setIsOpen(false)}>
               <Button className="w-full h-12 text-base bg-blue-600 hover:bg-blue-700 transition-colors">
                 {getLoginInLabel}
               </Button>
