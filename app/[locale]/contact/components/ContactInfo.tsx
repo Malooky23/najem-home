@@ -69,23 +69,25 @@ export default function ContactInfo() {
         {contactMethods.map((method, index) => (
           <div
             key={index}
-            className="flex items-center p-4 rounded-lg border bg-card shadow-sm"
+            className="flex flex-col sm:flex-row sm:items-center p-4 rounded-lg border bg-card shadow-sm"
           >
-            <div className={`flex-shrink-0 p-3 rounded-full ${method.bgColor}`}>
-              <method.icon className={`h-6 w-6 ${method.color}`} />
-            </div>
-            <div className="mx-4 flex-1">
-              <h3 className="font-medium">{method.title}</h3>
-              {/* Force LTR direction for phone numbers, email addresses */}
-              <p className="text-muted-foreground" dir={method.icon === Phone || method.icon === WhatsApp ? "ltr" : "auto"}>
-                {method.details}
-              </p>
+            <div className="flex items-center mb-3 sm:mb-0">
+              <div className={`flex-shrink-0 p-3 rounded-full ${method.bgColor}`}>
+                <method.icon className={`h-6 w-6 ${method.color}`} />
+              </div>
+              <div className="mx-4 flex-1">
+                <h3 className="font-medium">{method.title}</h3>
+                {/* Force LTR direction for phone numbers, email addresses */}
+                <p className="text-muted-foreground" dir={method.icon === Phone || method.icon === WhatsApp ? "ltr" : "auto"}>
+                  {method.details}
+                </p>
+              </div>
             </div>
             <Button
               asChild
               variant="outline"
               size="sm"
-              className="flex-shrink-0 w-[80px] justify-center"
+              className="w-full sm:w-[80px] justify-center sm:flex-shrink-0 mt-2 sm:mt-0 sm:ml-auto"
             >
               <Link href={method.href} target="_blank" rel="noopener noreferrer">
                 {method.action}
