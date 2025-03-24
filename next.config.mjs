@@ -1,22 +1,4 @@
-// import createNextIntlPlugin from 'next-intl/plugin';
-
-// /** @type {import('next').NextConfig} */
-// const withNextIntl = createNextIntlPlugin();
-// const nextConfig = {
-//     // reactStrictMode: true,
-//     // webpack(config) {
-//     //   config.module.rules.push({
-//     //     test: /\.svg$/i,
-//     //     issuer: /\.[js|ts|jsx|tsx]$/, // <= This line is crucial
-//     //     use: ['@svgr/webpack'],
-//     //   });
-  
-//     //   return config;
-//     // },
-//   }
-  
- 
-// export default withNextIntl(nextConfig);
+import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
 import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin();
@@ -42,5 +24,9 @@ const nextConfig = {
     return config;
   },
 };
+
+if (process.env.NODE_ENV === 'development') {
+  await setupDevPlatform();
+}
 
 export default withNextIntl(nextConfig);
