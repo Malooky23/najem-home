@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 
 import { useLocale, useTranslations } from "next-intl"
@@ -53,7 +54,7 @@ export default function HeroSection() {
               <p className="max-w-[600px] text-muted-foreground md:text-xl">{t("heroDescription")}</p>
             </div>
             <div className="flex flex-col gap-3 min-[400px]:flex-row">
-              <Link href={'tel:+971549968487'}>
+              <Link href={'/contact'}>
                 <Button
                   size="lg"
                   className="group relative overflow-hidden bg-primary px-8 py-6 transition-all hover:bg-primary/90"
@@ -63,15 +64,19 @@ export default function HeroSection() {
                 </Button>
               </Link>
 
-              <Link href={'https://wa.me/971549968485'}>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-secondary px-8 py-6 text-secondary hover:bg-secondary/10 hover:text-secondary"
-                >
-                  {t("learnMore")}
-                </Button>
-              </Link>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-secondary px-8 py-6 text-secondary hover:bg-secondary/10 hover:text-secondary"
+                onClick={() => {
+                  const servicesSection = document.getElementById('services');
+                  if (servicesSection) {
+                    servicesSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                {t("learnMore")}
+              </Button>
             </div>
           </div>
 
