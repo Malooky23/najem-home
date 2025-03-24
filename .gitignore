@@ -43,3 +43,5 @@ next-env.d.ts
 .roo
 memory-bank
 insert-variables.sh
+# OpenNext build output
+.open-next
