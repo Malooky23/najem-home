@@ -1,0 +1,13 @@
+name = "email-worker"
+main = "dist/index.js"
+compatibility_date = "2025-03-24"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+SMTP_HOST="smtp.yandex.com"
+SMTP_PORT="465"
+SMTP_SECURE="true"
+SMTP_USER="malek@najemaleen.com"
+SMTP_PASSWORD="hgexheegdlxlvslw"
+EMAIL_FROM="Najem Aleen Shipping <no-reply@najemaleen.com>"
+ADMIN_EMAIL="malek@najemaleen.com"

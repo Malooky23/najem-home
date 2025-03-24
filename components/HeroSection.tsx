@@ -52,7 +52,7 @@ export default function HeroSection() {
               <p className="max-w-[600px] text-muted-foreground md:text-xl">{t("heroDescription")}</p>
             </div>
             <div className="flex flex-col gap-3 min-[400px]:flex-row">
-              <Link href={'tel:+971549968487'}>
+              <Link href={'/contact'}>
                 <Button
                   size="lg"
                   className="group relative overflow-hidden bg-primary px-8 py-6 transition-all hover:bg-primary/90"
