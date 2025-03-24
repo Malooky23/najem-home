@@ -48,35 +48,41 @@ export default function HeroSection() {
 
           <div className="flex flex-col justify-center space-y-4 relative z-10">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter gradient-heading sm:text-5xl xl:text-6xl/none">
+              <h1 className={`text-3xl font-bold tracking-tighter gradient-heading sm:text-5xl xl:text-6xl/none ${isRtl ? 'text-right' : 'text-left'}`}>
                 {t("heroTitle")}
               </h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl">{t("heroDescription")}</p>
+              <p className={`max-w-[600px] text-muted-foreground md:text-xl ${isRtl ? 'text-right' : 'text-left'}`}>
+                {t("heroDescription")}
+              </p>
             </div>
-            <div className="flex flex-col gap-3 min-[400px]:flex-row">
-              <Link href={'/contact'}>
-                <Button
-                  size="lg"
-                  className="group relative overflow-hidden bg-primary px-8 py-6 transition-all hover:bg-primary/90"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-secondary opacity-0 transition-opacity group-hover:opacity-100" />
-                  <span className="relative">{t("contactUs")}</span>
-                </Button>
-              </Link>
+            <div className={`flex flex-row flex-wrap ${isRtl ? 'justify-center sm:justify-end' : 'justify-center sm:justify-start'} gap-3`}>
+              <div className="w-[48%] min-w-[140px] sm:w-auto">
+                <Link href={'/contact'} className="w-full block">
+                  <Button
+                    size="lg"
+                    className="w-full group relative overflow-hidden bg-primary py-4 sm:py-6 px-4 sm:px-8 transition-all hover:bg-primary/90 text-sm sm:text-base"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-secondary opacity-0 transition-opacity group-hover:opacity-100" />
+                    <span className="relative">{t("contactUs")}</span>
+                  </Button>
+                </Link>
+              </div>
 
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-secondary px-8 py-6 text-secondary hover:bg-secondary/10 hover:text-secondary"
-                onClick={() => {
-                  const servicesSection = document.getElementById('services');
-                  if (servicesSection) {
-                    servicesSection.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
-              >
-                {t("learnMore")}
-              </Button>
+              <div className="w-[48%] min-w-[140px] sm:w-auto">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full border-secondary py-4 sm:py-6 px-4 sm:px-8 text-secondary hover:bg-secondary/10 hover:text-secondary text-sm sm:text-base"
+                  onClick={() => {
+                    const servicesSection = document.getElementById('services');
+                    if (servicesSection) {
+                      servicesSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
+                  {t("learnMore")}
+                </Button>
+              </div>
             </div>
           </div>
 

@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 import { Button } from "@/components/ui/button"
 import { Mail, MapPin, Phone } from "lucide-react"
 import { WhatsApp } from "../../../../components/Icons";
@@ -7,6 +7,8 @@ import './icon.css'
 
 export default function ContactSection() {
   const t = useTranslations("Index")
+  const locale = useLocale()
+  const isRtl = locale === "ar"
 
   const contactMethods = [
     {
@@ -22,7 +24,8 @@ export default function ContactSection() {
       textColor: "text-blue-600",
       iconHoverColor: "group-hover:text-blue-700",
       shadowHover: "group-hover:shadow-md group-hover:shadow-blue-600/20",
-      link: 'tel:+97142579791'
+      link: '/contact',
+      forceLeftToRight: true
     },
     {
       icon: WhatsApp,
@@ -72,38 +75,38 @@ export default function ContactSection() {
   ];
 
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 section-overlap-top border-0 min-h-[80vh] flex items-center justify-center" id="contact">      
-      <div className="container relative z-10 my-auto">
-        <div className="mx-auto flex max-w-[980px] flex-col items-center gap-4 text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tighter gradient-heading sm:text-4xl md:text-5xl">
+    <section className="relative py-12 md:py-24 lg:py-32 section-overlap-top border-0 min-h-[80vh] flex items-center justify-center" id="contact">      
+      <div className="container relative z-10 my-auto px-4 sm:px-6">
+        <div className="mx-auto flex max-w-[980px] flex-col items-center gap-3 md:gap-4 text-center mb-10 md:mb-16">
+          <h2 className="text-2xl font-bold tracking-tighter gradient-heading sm:text-3xl md:text-4xl lg:text-5xl">
             {t("contactTitle")}
           </h2>
-          <p className="max-w-[750px] text-lg text-muted-foreground sm:text-xl">
+          <p className="max-w-[750px] text-base md:text-lg text-muted-foreground lg:text-xl">
             {t("contactDescription")}
           </p>
         </div>
         
-        <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
+        <div className="mx-auto grid max-w-4xl gap-3 sm:gap-4 md:gap-6 grid-cols-1 md:grid-cols-2">
           {contactMethods.map((method) => (
             <Button
               key={method.key}
               size="lg"
-              className={`group relative h-auto overflow-hidden border ${method.borderColor} p-6 transition-all duration-300 ease-in-out hover:${method.hoverBorderColor} ${method.shadowHover} hover:translate-y-[-2px] rounded-xl`}
+              className={`group relative h-auto overflow-hidden border ${method.borderColor} p-4 sm:p-5 md:p-6 transition-all duration-300 ease-in-out hover:${method.hoverBorderColor} ${method.shadowHover} hover:translate-y-[-2px] rounded-xl`}
               variant="outline"
             >
               <Link href={method.link} target="_blank" className="w-full">
                 <div
                   className={`absolute inset-0 transition-all duration-300 ${method.gradient} group-hover:${method.hoverGradient}`}
                 />
-                <div className="relative flex items-center gap-4">
-                  <div className="flex-shrink-0 rounded-full bg-white/10 p-3">
-                    <method.icon className={`contact-icon w-7 h-7 transition-colors duration-300 ${method.iconColor} ${method.iconHoverColor}`} />
+                <div className={`relative flex items-center gap-3 md:gap-4 ${isRtl ? 'flex-row-reverse' : ''}`}>
+                  <div className="flex-shrink-0 rounded-full bg-white/10 p-2 md:p-3">
+                    <method.icon className={`contact-icon w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 transition-colors duration-300 ${method.iconColor} ${method.iconHoverColor}`} />
                   </div>
-                  <div className="flex-1 text-left">
-                    <span className={`text-lg font-semibold block transition-colors duration-300 ${method.textColor} ${method.iconHoverColor}`}>
+                  <div className={`flex-1 ${isRtl ? 'text-right' : 'text-left'}`}>
+                    <span className={`text-base md:text-lg font-semibold block transition-colors duration-300 ${method.textColor} ${method.iconHoverColor}`}>
                       {t(method.labelKey)}
                     </span>
-                    <span  className="text-sm text-muted-foreground block transition-colors duration-300 group-hover:text-current/70">
+                    <span className={`text-xs md:text-sm text-muted-foreground block transition-colors duration-300 group-hover:text-current/70 ${method.forceLeftToRight && isRtl ? 'direction-ltr' : ''}`}>
                       {t(method.descriptionKey)}
                     </span>
                   </div>
