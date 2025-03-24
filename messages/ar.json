@@ -11,8 +11,34 @@
   },
   "Footer": {
     "copyright": "© 2025 نجم الين للشحن. جميع الحقوق محفوظة.",
-    "privacyPolicy": "سياسة الخصوصية",
-    "termsOfService": "شروط الخدمة"
+    "companyName": "نجم الين للشحن",
+    "address": "منطقة القصيص الصناعية 1\nدبي، الإمارات العربية المتحدة",
+    "allRightsReserved": "جميع الحقوق محفوظة.",
+    "phone": "+971 4 257 97 91",
+    "email": "sales@najemaleen.com",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "services": "خدمات",
+    "about": "عن نجم الين للشحن",
+    "contactUs": "اتصل بنا",
+    "contact": "اتصل بنا",
+    "getQuote": "احصل على عرض أسعار",
+    "login": "تسجيل الدخول",
+    "faq": "أسئلة متكررة",
+    "home": "الرئيسية",
+    "shippingToSyria": "الشحن إلى سوريا",
+    "quickLinks": "روابط سريعة",
+    "servicesTitle": "خدماتنا",
+    "companyDescription": "تقدم نجمة علين للشحن حلولًا لوجستية شاملة بما في ذلك شحن الحاويات، وخدمات وكالة الشحن، والتخليص الجمركي في جميع أنحاء دولة الإمارات العربية المتحدة وخارجها. بفضل خبرتنا في طرق التجارة الدولية ومعرفتنا المتخصصة بالشحن إلى سوريا ومناطق أخرى في الشرق الأوسط وأوروبا، فإننا نقدم حلول نقل موثوقة وفعالة للشركات من جميع الأحجام.",
+    "Services": {
+      "containerShippingTitle": "شحن الحاويات",
+      "freightForwardingTitle": "خدمات الشحن",
+      "customsClearanceTitle": "التخليص الجمركي",
+      "carTransportationTitle": "نقل السيارات",
+      "packagingRepackagingTitle": "التعبئة والتغليف",
+      "warehousingSolutionsTitle": "حلول التخزين",
+      "logisticsConsultationTitle": "استشارات لوجستية"
+    }
   },
   "Breadcrumbs": {
     "home": "الرئيسية"

@@ -10,9 +10,34 @@
     "home": "Home"
   },
   "Footer": {
-    "copyright": "© 2025 Najem Aleen Shipping. All rights reserved.",
+    "allRightsReserved": "All rights reserved.",
+    "companyName": "Najem Aleen Shipping",
+    "address": "Al Qusais Industrial Area 1, Dubai, UAE",
+    "phone": "+971 4 257 97 91",
+    "email": "sales@najemaleen.com",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "services": "Services",
+    "about": "About",
+    "contactUs": "Contact Us",
+    "contact": "Contact Us",
+    "getQuote": "Get a Quote",
+    "login": "Login",
+    "faq": "FAQ",
+    "home": "Home",
+    "shippingToSyria": "Shipping to Syria",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Our Services",
+    "companyDescription": "Najem Aleen Shipping provides comprehensive logistics solutions including container shipping, freight forwarding, and customs clearance services throughout the UAE and beyond. With expertise in international trade routes and specialized knowledge of shipping to Syria and other regions in the Middle Eastern and Europe, we deliver reliable and efficient transportation solutions for businesses of all sizes.",
+    "Services": {
+      "containerShippingTitle": "Container Shipping",
+      "freightForwardingTitle": "Freight Forwarding",
+      "customsClearanceTitle": "Customs Clearance",
+      "carTransportationTitle": "Car Transportation",
+      "packagingRepackagingTitle": "Packaging & Repackaging",
+      "warehousingSolutionsTitle": "Warehousing Solutions",
+      "logisticsConsultationTitle": "Logistics Consultation"
+    }
   },
   "Breadcrumbs": {
     "home": "Home"
