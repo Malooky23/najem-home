@@ -1,9 +1,8 @@
 import { useTranslations } from "next-intl"
 import { Card, CardContent } from "@/components/ui/card"
-import { Container, ShipForward, CustomsClearance, CarTransport } from "@/components/Icons"
+import { Container, ShipForward, CustomsClearance, CarTransport, Syria } from "@/components/Icons"
 import {Link} from '@/i18n/routing'; // Import Link
 import { PackageCheck, Users2Icon, Warehouse } from "lucide-react";
-
 interface ServicesSectionProps {
   isTitle?: boolean
 }
@@ -19,6 +18,7 @@ export default function ServicesSection({ isTitle = true }: ServicesSectionProps
     { icon: PackageCheck, key: "packagingRepackaging", href: "/services/packaging-repackaging" }, // Added packaging-repackaging
     { icon: Warehouse, key: "warehousingSolutions", href: "/services/warehousing-solutions" }, // Added warehousing-solutions
     { icon: Users2Icon, key: "logisticsConsulting", href: "/services/logistics-consultation" }, // Added warehousing-solutions
+    { icon: Syria, key: "shippingToSyria", href: "/services/shipping-to-syria" }, // Added warehousing-solutions
   ]
 
   return (
