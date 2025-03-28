@@ -220,7 +220,8 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex-shrink-0">
-            <Image src="/najem_favicon.png" alt={t("logoAlt")} width={180} height={50} className="h-10 w-auto" />
+            <Image src="/name_banner.png" alt={t("logoAlt")} width={180} height={50} className="h-10 w-auto" />
+            {/* <Image src="/android-chrome-512x512.png" alt={t("logoAlt")} width={180} height={50} className="h-10 w-auto" /> */}
           </Link>
 
           {/* Desktop Navigation */}

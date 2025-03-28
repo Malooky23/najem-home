@@ -5,5 +5,10 @@ export default function RootLayout({
 }: {
   children: ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <link rel="icon" href="/favicon.ico" />
+      {children}
+    </>
+  );
 }

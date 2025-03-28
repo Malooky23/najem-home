@@ -16,8 +16,8 @@ import metadata from "@/i18n/metadata";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 
-const inter = Inter({ subsets: ["latin"] });
-const cairo = Cairo({ subsets: ["arabic"] });
+const inter = Inter({ subsets: [ "latin" ] });
+const cairo = Cairo({ subsets: [ "arabic" ] });
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -31,7 +31,7 @@ const geistMono = localFont({
 });
 
 export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "ar" }];
+  return [ { locale: "en" }, { locale: "ar" } ];
 }
 
 type Locale = keyof typeof metadata;
@@ -44,11 +44,11 @@ export async function generateMetadata({
   // Check if the locale exists in metadata, otherwise default to 'en'
   const safeLocale = Object.keys(metadata).includes(locale) ? locale : 'en';
   const typedLocale = safeLocale as Locale;
-  
+
   return {
-    title: metadata[typedLocale].title,
-    description: metadata[typedLocale].description,
-    keywords: metadata[typedLocale].keywords,
+    title: metadata[ typedLocale ].title,
+    description: metadata[ typedLocale ].description,
+    keywords: metadata[ typedLocale ].keywords,
     metadataBase: new URL('https://www.najemaleen.com'),
     alternates: {
       canonical: '/',
@@ -62,8 +62,8 @@ export async function generateMetadata({
       locale: safeLocale === "ar" ? 'ar_AR' : 'en_US',
       url: 'https://www.najemaleen.com',
       siteName: 'Najem Aleen Shipping',
-      title: metadata[typedLocale].title,
-      description: metadata[typedLocale].description,
+      title: metadata[ typedLocale ].title,
+      description: metadata[ typedLocale ].description,
       images: [
         {
           url: '/op-logo.jpg', // Create this image (1200x630px ideal size)
@@ -75,9 +75,9 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: metadata[typedLocale].title,
-      description: metadata[typedLocale].description,
-      images: ['/op-logo.jpg'], // Create this image (1200x600px ideal size)
+      title: metadata[ typedLocale ].title,
+      description: metadata[ typedLocale ].description,
+      images: [ '/op-logo.jpg' ], // Create this image (1200x600px ideal size)
     },
     robots: {
       index: true,
@@ -100,14 +100,14 @@ export default async function RootLayout({
   params: { locale: string };
 }) {
   // Check if locale is valid, redirect to default locale if not
-  const validLocales = ["en", "ar"];
+  const validLocales = [ "en", "ar" ];
   if (!validLocales.includes(locale)) {
     redirect('/en'); // Redirect to English as default
   }
 
   let messages;
   try {
-    messages = await getMessages({locale});
+    messages = await getMessages({ locale });
   } catch (error) {
     // If messages can't be loaded but locale is valid, still redirect to default
     redirect('/en');
@@ -117,6 +117,11 @@ export default async function RootLayout({
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <StructuredData />
       </head>
       <body className={locale === "ar" ? cairo.className : inter.className}>
