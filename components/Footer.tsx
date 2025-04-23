@@ -91,13 +91,13 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 shrink-0 text-primary" />
-                <Link href="tel:+1234567890" className="text-muted-foreground hover:text-primary">
+                <Link href="tel:+97142579791" className="text-muted-foreground hover:text-primary">
                   {t("phone")}
                 </Link>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 shrink-0 text-primary" />
-                <Link href="mailto:info@example.com" className="text-muted-foreground hover:text-primary">
+                <Link href="mailto:sales@najemaleen.com" className="text-muted-foreground hover:text-primary">
                   {t("email")}
                 </Link>
               </li>
